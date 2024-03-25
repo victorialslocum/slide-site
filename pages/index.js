@@ -14,7 +14,7 @@ const Home = ({ decks, previews }) => {
 
       <div className="flex flex-row">
         {decks.map((deck, index) => (
-          <div className="bg-gray-100 basis-1/3 m-4 p-4 rounded-lg shadow-md justify-center">
+          <div className="bg-gray-100 basis-1/3 m-4 p-4 rounded-lg shadow-md justify-center" key={deck}>
             <iframe
               srcDoc={previews[index]}
               width="400px"
@@ -48,8 +48,8 @@ export async function getStaticProps() {
         const indexPath = path.join(decksDirectory, deck, "index.html");
 
         let rawContent = await fs.readFile(indexPath, "utf-8");
-        let newContent = rawContent.replace(/lib/g, "slides/" + String(deck) + "/lib");
-        let content = newContent.replace(/deck-/g, "slides/" + String(deck) + "/deck-");
+        let newContent = rawContent.replace(/lib\//g, "slides/" + String(deck) + "/lib/");
+        let content = newContent.replace(/assets\//g, "slides/" + String(deck) + "/assets/");
         return content;
       } catch (error) {
         console.error(`Error reading ${deck}/index.html:`, error);
