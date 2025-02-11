@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "Data Science Dojo Webinar 2: Intro to Vector Search"}' />
+		<title>Data Science Dojo Webinar 2: Intro to Vector Search</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-overpass2 theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="a340adae645bb2a2454cf9be34a5c924" data-background-color="rgb(1, 1, 1)" data-auto-animate="">
+
+
+<div class="sl-block" data-block-type="text" data-name="text-2767df" data-block-id="871b006518c1480a3e2a7e166ee7811f" style="height: auto; width: 600px; left: 162px; top: 379.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); font-size: 90%; text-align: center;"><h3>Data Science Dojo &amp; Weaviate</h3></div></div>
+<div class="sl-block" data-block-type="text" style="width: 940px; left: 10px; top: 134.5px; height: auto;" data-block-id="519c197d0a771f4babc1413be8e05d42" data-name="text-3de096"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); font-size: 134%; text-align: center; border-color: rgb(255, 255, 255);">
+<h1><strong><span style="font-size:1.2em">Intro to </span></strong></h1>
+
+<h1><strong><span style="font-size:1.4em">Vector Search</span></strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="video" data-name="video-5db417" data-block-id="65844664fd35e1b757ab7b7bd3436d41" style="min-width: 30px; min-height: 30px; width: 828px; height: 828px; left: 388px; top: 182px;"><div class="sl-block-style" style="z-index: 10; transform: rotate(0deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927497" data-video-thumb="ds-dojo-2-intro-to-vector-search/7757f9cc356f265f4b0b5bc069ef7a89.jpg"><video playsinline="" poster="ds-dojo-2-intro-to-vector-search/7757f9cc356f265f4b0b5bc069ef7a89.jpg" muted="" data-autoplay="" loop="loop" data-paused-by-reveal="" data-src="ds-dojo-2-intro-to-vector-search/1baad112d869a9143a7a0278b91ac9f3.mp4"></video></div></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="b65bad6a2be91472860a94149108790d">
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 119px; top: 194px; height: auto;" data-name="text-c70df5" data-block-id="bb3f108bc705fe20423477fe0fe77ff6"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); text-align: left; font-size: 129%;"><h1><span style="font-size:0.9em">Victoria Slocum</span></h1></div></div>
+
+<div class="sl-block" data-block-type="text" data-name="text-3f3a33" data-block-id="3137a93535c075982ad9ab4dfe05e75a" style="height: auto; width: 600px; left: 119px; top: 276px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255); text-align: left;"><h2>Machine Learning Engineer</h2></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-c2beb6" style="width: 525.5px; height: 525.5px; left: 532.5px; top: 214px; min-width: 1px; min-height: 1px;" data-block-id="d217e040b199bc9464eb5f53a8f1b77f"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="1350" data-natural-height="1350" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/2373140cf326537d3c15ebf75f037ff4.png"></div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-f3a0b0" style="width: 305px; height: 284px; left: 119px; top: 367px;" data-block-id="11d40927f8c81910f6c1d3f24c271a35"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 14;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 305 284"><rect width="305" height="284" rx="15" ry="15" class="shape-element" fill="rgb(238, 238, 238)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 305px; height: 284px; left: 119px; top: 367px;" data-name="shape-ddb7dc" data-block-id="7adbd9f7c8789f2e295e8b5bf1250075"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 15;" data-shape-corner-radius="15px" data-shape-stroke-color="#000000" data-shape-stroke-width="1px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 305 284"><defs><clippath id="shape-mask-2-1738767883220"><rect width="305" height="284" rx="15" ry="15" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2"></rect></clippath></defs><rect width="305" height="284" rx="15" ry="15" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2" clip-path="url(#shape-mask-2-1738767883220)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-bbb421" data-block-id="5117f33f6c4ff1f4a1dcb057f11ae0bd" style="width: 267px; height: 267px; left: 138px; top: 375.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 16;"><img class="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/1e65307be1976ce4f6b093f81e9cb7f4.png"></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-5db417" style="min-width: 30px; min-height: 30px; width: 828px; height: 828px; left: -414px; top: 209px;" data-block-id="56c6a7f3d4490d3340a91814011ba226"><div class="sl-block-style" style="z-index: 10; transform: rotate(-165deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927497" data-video-thumb="ds-dojo-2-intro-to-vector-search/7757f9cc356f265f4b0b5bc069ef7a89.jpg"><video playsinline="" poster="ds-dojo-2-intro-to-vector-search/7757f9cc356f265f4b0b5bc069ef7a89.jpg" muted="" data-autoplay="" loop="loop" data-paused-by-reveal="" data-src="ds-dojo-2-intro-to-vector-search/1baad112d869a9143a7a0278b91ac9f3.mp4"></video></div></div></div></section><section data-background-color="rgb(255, 255, 255)" data-auto-animate="" data-id="811f9ade81ef8e0fa833d33ee6264746" data-background-iframe="https://weaviate.io/blog/vector-search-explained" data-background-interactive="true" data-preload="">
+
+
+
+
+
+
+</section><section data-background-color="rgb(255, 255, 255)" data-auto-animate="" data-id="1d4221ca0f7e20cddac85a2f534b1c13">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" data-block-id="90a6f7828bbf6389c3ae60cc8c5d53fa" style="height: auto; width: 600px; left: 180px; top: 41px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 114%;">
+<h1>search systems</h1>
+
+<h1>run the world</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-5c3ada" data-block-id="dddd58554e2019b44c7870a12d86eb3b" style="height: auto; width: 452px; left: 28px; top: 267px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; text-align: left;">
+<p><strong>Search systems are everywhere,</strong> </p>
+
+<p>from Google, to e-commerce sites, to internal documents</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-ac5789" data-block-id="294825159ffb7d8e29904807a77ac64d" style="width: 449px; height: 47px; left: 17px; top: 261px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 229, 153)" data-shape-stretch="true" style="z-index: 12;" data-shape-corner-radius="5px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 449 47"><rect width="449" height="47" rx="5" ry="5" class="shape-element" fill="rgb(255, 229, 153)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-6236c6" data-block-id="a7ca85b6b0d88dec4f9f6ae47649a60b" style="width: 608.481px; height: 287px; left: 426.607px; top: 413px; min-width: 1px; min-height: 1px;"><div class="sl-block-style" style="z-index: 11; filter: drop-shadow(rgba(0, 0, 0, 0.5) 3px 3px 3px) opacity(100%);"><div class="sl-block-content" style="z-index: 11; border-style: solid; border-radius: 10px; border-width: 1px; border-color: rgb(136, 136, 136);"><img class="" data-natural-width="1200" data-natural-height="566" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/c3feb915578bb0fc6b6e8a051fc29bf8.png"></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4dd080" data-block-id="2c093aa12c5836a9d69be53bc48283bf" style="width: 600.363px; height: 337.704px; left: 552.97px; top: 168.148px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1080" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/84f7bda826d1f8f5dcbe2779a29c864b.png"></div></div></section><section data-background-color="rgb(255, 255, 255)" data-auto-animate="" data-id="4c764a0580bfca249d8916a1c80b9bed">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 600px; left: 180px; top: 23px;" data-block-id="510ad356258205015b18f704288479d8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><h1>Traditional search</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d58129" data-block-id="c9c7508afe602ccb844a9b257c100b57" style="height: auto; width: 600px; left: 180px; top: 87px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><h3>(keyword search)</h3></div></div>
+
+<div class="sl-block" data-block-type="text" data-name="text-a74857" data-block-id="9dde4d4546eb7a66f0240537fbbfbd7b" style="height: auto; width: 410px; left: 21px; top: 230px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left;"><p>Match <strong>exact terms</strong> between the query and the documents</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-5e88fa" data-block-id="edfa1740b21c1dc1b3cd3b1bff4e9adc" style="height: auto; width: 399px; left: 42px; top: 397px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; text-align: left;">
+<p style="text-align:left"><strong>Struggles with:</strong></p>
+
+<ul>
+	<li style="text-align:left">Capturing meaning</li>
+	<li style="text-align:left">Conversational language</li>
+	<li style="text-align:left">Typos and synonyms</li>
+</ul>
+
+<p style="text-align:left"> </p>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-ac5789" style="width: 399px; height: 204px; left: 21px; top: 378px;" data-block-id="0dc719e5150f99bb9e3a8cc8b97123aa"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 229, 153)" data-shape-stretch="true" style="z-index: 10;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 399 204"><rect width="399" height="204" rx="15" ry="15" class="shape-element" fill="rgb(255, 229, 153)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-899e8a" data-block-id="28f505ac26bbacedd5dc29e7dffa4c6c" style="min-width: 30px; min-height: 30px; width: 530px; height: 530px; left: 457px; top: 170px;"><div class="sl-block-content" style="z-index: 15;" data-media-id="11217492" data-video-thumb="ds-dojo-2-intro-to-vector-search/721811737bb0103082e7357f8756e75a.jpg"><video playsinline="" poster="ds-dojo-2-intro-to-vector-search/721811737bb0103082e7357f8756e75a.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-src="ds-dojo-2-intro-to-vector-search/4957c480a4b0c095938d7e747311d6d8.mp4"></video></div></div></section><section data-background-color="rgb(255, 255, 255)" data-auto-animate="" data-id="5ceaea09fc0bf3912ac2def7a19e687f">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 600px; left: 180px; top: 11px;" data-block-id="08bafd66f6398e314b21f8bd09271fe3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><h1>basic vector search</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d58129" style="height: auto; width: 600px; left: 180px; top: 87px;" data-block-id="bf849d92d6a93cd510336c66d56bb92b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><h3>knn (k nearest neighbors)</h3></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b54c24" data-block-id="ae46a883a84120523b3a9a5ba7be2ec8" style="height: auto; width: 501px; left: -23px; top: 194px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left;">
+<p>Calculates <strong>the exact distance</strong> between the query and the document vectors,</p>
+
+<p><em>for every document</em></p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="image-28cef4" data-block-id="4d7ee0c24e7e84e6b09c0f97ff331101" style="width: 450.414px; height: 461px; left: 556.691px; top: 172px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="1319" data-natural-height="1350" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/52bf8246060625110e824cfcd37dc03a.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-ddf5b9" data-block-id="cf5979f0ffe09dd767010b5e31506f2d" style="height: auto; width: 493px; left: -23px; top: 408px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; text-align: left; font-size: 87%;">
+<p><span style="font-size:1.2em"><strong>To find the most similar documents:</strong></span></p>
+
+<ol>
+	<li>Store <strong>document embeddings</strong>
+</li>
+	<li>Convert <strong>query to vector embedding</strong>
+</li>
+	<li>Calculate <strong>similarity score</strong> by measuring <a href="https://weaviate.io/blog/distance-metrics-in-vector-search" target="_blank">the distance</a> between every document embedding and the query embedding</li>
+	<li>Return documents <strong>with highest score</strong>
+</li>
+</ol>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-ac5789" style="width: 548px; height: 304px; left: -47px; top: 381px;" data-block-id="b5f8d9be0c44266fbbda6f967ee666de"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 229, 153)" data-shape-stretch="true" style="z-index: 10;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 548 304"><rect width="548" height="304" rx="15" ry="15" class="shape-element" fill="rgb(255, 229, 153)"></rect></svg></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="e74af2695c18f1788d9248d5e1f8ceb8">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 600px; left: 180px; top: 248.5px;" data-block-id="d7626551c0df116152cde815c3ff3ca4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255);">
+<h1>Implementing basic vector search</h1>
+
+<h1>in Python</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-16cc4d" style="height: auto; width: 831px; left: 64.5px; top: 465.5px;" data-block-id="af274d694995013ae86447be415be965"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 65%;"><p><a href="https://colab.research.google.com/drive/1rbfBy_ewPBCapOD22EDmQFYNjYx5BNDz?usp=sharing" target="_blank">https://colab.research.google.com/drive/1rbfBy_ewPBCapOD22EDmQFYNjYx5BNDz?usp=sharing</a></p></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-c60b1f" data-block-id="5fcec59ee9c9a22ddfde806f1ae00072" style="min-width: 30px; min-height: 30px; width: 820px; height: 820px; left: 462.5px; top: -348.5px;"><div class="sl-block-style" style="z-index: 10; opacity: 0.8;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927662" data-video-thumb="ds-dojo-2-intro-to-vector-search/c007bd4b36124f8292bb8680dc560e86.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="ds-dojo-2-intro-to-vector-search/c007bd4b36124f8292bb8680dc560e86.jpg" data-paused-by-reveal="" data-src="ds-dojo-2-intro-to-vector-search/25c27b95d1a3f6d260e29cde9853ea00.mp4"></video></div></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="1e8e2c53ed4c4970f3861997d934f7f2">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="image-2eb304" data-block-id="1acf52cf551957d5e2d53c95455d1665" style="width: 960px; height: 262.4px; left: 0px; top: 373.6px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1800" data-natural-height="492" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/3a046069693732ecb527abad02f4a594.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-d0c33b" data-block-id="661f2bd36822184effc02cb7f60ba981" style="width: 960px; height: 70.3219px; left: 0px; top: 296.439px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="1802" data-natural-height="132" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/1c21a175c14adfbbc349e976e9023021.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-296d23" data-block-id="2c0a9e53e2b198f2d5fec8ba780eb620" style="width: 960px; height: 241.057px; left: 0px; top: 47.6px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="1816" data-natural-height="456" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/021c7df6ea924a310e1aa0b8d627dd4b.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-16cc4d" data-block-id="0f862a186fd00bf0c72478055f03a17e" style="height: auto; width: 831px; left: 64.5px; top: 643px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 65%;"><p><a href="https://colab.research.google.com/drive/1rbfBy_ewPBCapOD22EDmQFYNjYx5BNDz?usp=sharing" target="_blank">https://colab.research.google.com/drive/1rbfBy_ewPBCapOD22EDmQFYNjYx5BNDz?usp=sharing</a></p></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-c60b1f" style="min-width: 30px; min-height: 30px; width: 820px; height: 820px; left: -508.5px; top: -127.5px;" data-block-id="ee44c1351f02c94b2acfcfa256a7f6f3"><div class="sl-block-style" style="z-index: 10; opacity: 0.8; transform: rotate(-105deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927662" data-video-thumb="ds-dojo-2-intro-to-vector-search/c007bd4b36124f8292bb8680dc560e86.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="ds-dojo-2-intro-to-vector-search/c007bd4b36124f8292bb8680dc560e86.jpg" data-paused-by-reveal="" data-src="ds-dojo-2-intro-to-vector-search/25c27b95d1a3f6d260e29cde9853ea00.mp4"></video></div></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="743a4d49c16c982fd9426bf328facdc9">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="image-9e244c" style="width: 960px; height: 72.4528px; left: 0px; top: 438.774px; min-width: 1px; min-height: 1px;" data-block-id="15522ef7d74abb850010f4d8b1e3a68f"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1802" data-natural-height="136" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/f86d60ea0bcf02212f306d0dc12c63b9.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-a3f09f" style="width: 960px; height: 73.1126px; left: 0px; top: 350px; min-width: 1px; min-height: 1px;" data-block-id="b48c688c0a3b1420320676fbe1114760"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="1812" data-natural-height="138" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/fbc0ce07a6416774880b721500258057.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-db584a" data-block-id="ce5b64123af7d427f5483096a23759b1" style="width: 960.003px; height: 185.151px; left: -0.003px; top: 148.849px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="1794" data-natural-height="346" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/52d07374f5a569042f91bd6a68fe76aa.png"></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-c60b1f" style="min-width: 30px; min-height: 30px; width: 820px; height: 820px; left: -292.5px; top: 194.5px;" data-block-id="76a03bdb35b03cf44b42572ab46db1d5"><div class="sl-block-style" style="z-index: 10; opacity: 0.8; transform: rotate(165deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927662" data-video-thumb="ds-dojo-2-intro-to-vector-search/c007bd4b36124f8292bb8680dc560e86.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="ds-dojo-2-intro-to-vector-search/c007bd4b36124f8292bb8680dc560e86.jpg" data-paused-by-reveal="" data-src="ds-dojo-2-intro-to-vector-search/25c27b95d1a3f6d260e29cde9853ea00.mp4"></video></div></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="eacb0ad9f394b1371ce944c2386779a1">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 690px; left: 135px; top: 242px;" data-block-id="890aa5899ff78db7f6a38986209c76a5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255);">
+<h1><span style="font-size:1.2em"><strong>So...</strong></span></h1>
+
+<h1>why do you even need a vector database?</h1>
+</div></div>
+<div class="sl-block" data-block-type="video" data-name="video-c60b1f" style="min-width: 30px; min-height: 30px; width: 820px; height: 820px; left: 507.5px; top: 196.5px;" data-block-id="1cf4fbdb757abee0a8ea063d3b464c17"><div class="sl-block-style" style="z-index: 10; opacity: 0.8; transform: rotate(90deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927662" data-video-thumb="ds-dojo-2-intro-to-vector-search/c007bd4b36124f8292bb8680dc560e86.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="ds-dojo-2-intro-to-vector-search/c007bd4b36124f8292bb8680dc560e86.jpg" data-paused-by-reveal="" data-src="ds-dojo-2-intro-to-vector-search/25c27b95d1a3f6d260e29cde9853ea00.mp4"></video></div></div></div></section><section data-background-color="rgb(255, 255, 255)" data-auto-animate="" data-id="533dbfb4184bbf064c25ef3e4f9e027e">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 690px; left: 135px; top: 10px;" data-block-id="f52c77864aba14f2070eb8c4a52fd2a8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><h1>why do you even need a vector database?</h1></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-fa4b1f" data-block-id="0157edaa455aa0ef240913c2411085e5" style="width: 600.252px; height: 476px; left: 179.874px; top: 213px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1000" data-natural-height="793" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/9e9d0c452189122d42e20893fefde847.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-31f3a6" data-block-id="b28baed01784a025a499748545b6a6c4" style="height: auto; width: 600px; left: 436px; top: 205px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p><strong>ANN</strong></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 427px; top: 500px;" data-block-id="707021d750f45486e7c8dd4fe25f9ef2" data-name="text-1adb14"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;"><p><strong>kNN</strong></p></div></div></section><section data-background-color="rgb(255, 255, 255)" data-auto-animate="" data-id="246fc8a8df90272bdbd9b9926f01fa30">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 600px; left: 180px; top: 15px;" data-block-id="2292decdb7cf519877a1126bf816a194"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><h1>ANN algorithms</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-0d9d8e" data-block-id="e635fb0f3d29f2c16ce997a9728d58fd" style="height: auto; width: 445px; left: -32.5px; top: 161.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left; font-size: 121%;"><p>Trade exact precision for <strong>huge speed improvements</strong></p></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-e636c8" data-block-id="a6b39553365e2913381691f52a37dd27" style="min-width: 30px; min-height: 30px; width: 530px; height: 530px; left: 462.5px; top: 134px;"><div class="sl-block-content" style="z-index: 11;" data-media-id="11209796" data-video-thumb="ds-dojo-2-intro-to-vector-search/f61a9619cccac8ef9bbeab46eaa73cbd.jpg"><video playsinline="" poster="ds-dojo-2-intro-to-vector-search/f61a9619cccac8ef9bbeab46eaa73cbd.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/67c5b998af135c5ec462f577d3e65070.mp4"></video></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-c71298" data-block-id="c55bb04ba6319556c126e1c5dfae0c1e" style="height: auto; width: 480px; left: -10px; top: 387px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; text-align: left;">
+<p><strong>Examples of ANN methods:</strong></p>
+
+<ul>
+	<li>trees – e.g. ANNOY,</li>
+	<li>proximity graphs - e.g. HNSW,</li>
+	<li>clustering - e.g. FAISS,</li>
+	<li>hashing - e.g. LSH</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-ac5789" style="width: 441px; height: 249px; left: -28.5px; top: 363px;" data-block-id="6121f851a848e2040a5327dbdb903f11"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 229, 153)" data-shape-stretch="true" style="z-index: 10;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 441 249"><rect width="441" height="249" rx="15" ry="15" class="shape-element" fill="rgb(255, 229, 153)"></rect></svg></div></div></section><section data-background-color="rgb(255, 255, 255)" data-auto-animate="" data-id="5958a49fcf83018abaef172b2059e9df">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 600px; left: 180px; top: 15px;" data-block-id="2b912301292ee5090d6fe6eff67d5f6c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><h1>HNSW</h1></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-e636c8" style="width: 530px; height: 530px; left: 460.5px; top: 162px;" data-block-id="53711a06efe7f572a7272bd9035de3b7"><div class="sl-block-content" style="z-index: 10;" data-media-id="11217598" data-video-thumb="ds-dojo-2-intro-to-vector-search/a316b79f2d46b9c6eb4ddb573dafce67.jpg"><video playsinline="" poster="ds-dojo-2-intro-to-vector-search/a316b79f2d46b9c6eb4ddb573dafce67.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/ed4e7c5d4f245e10a98c05e3ebc64d7c.mp4"></video></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f90a90" data-block-id="a354b8a1d657e2880a440c7e323ac65f" style="height: auto; width: 600px; left: 180px; top: 89px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p>(Hierarchical Navigable Small Worlds)</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-c71298" style="height: auto; width: 480px; left: -8px; top: 413px;" data-block-id="925b0ab0ffb4cb23cd8b29c10b3d60f6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; text-align: left;">
+<p style="color:rgb(0, 0, 0)"><strong>In Weaviate:</strong></p>
+
+<ul style="color:rgb(0, 0, 0)">
+	<li>Custom implementation</li>
+	<li>CRUD operations</li>
+	<li>Fast, scalable, and accurate</li>
+	<li>Tuneable settings</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-ac5789" style="width: 441px; height: 249px; left: -26.5px; top: 389px;" data-block-id="257a405244c7e6262fb215020c410969"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 229, 153)" data-shape-stretch="true" style="z-index: 13;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 441 249"><rect width="441" height="249" rx="15" ry="15" class="shape-element" fill="rgb(255, 229, 153)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-0d9d8e" style="height: auto; width: 445px; left: -30.5px; top: 203px;" data-block-id="e224d342a99681967c36b72b2c4fe6b6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; text-align: left; font-size: 90%;"><p>Organizes vectors into a <strong>hierarchical, multi-layered graph structure</strong>, which allows for fast navigation through the dataset during search operations</p></div></div></section><section data-background-color="rgb(255, 255, 255)" data-auto-animate="" data-id="1c356bb099503e8020a0552600b7a9b6">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 600px; left: 180px; top: 12px;" data-block-id="aaee905e48bd2cd19466d560d9d9995d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><h1>HNSW in Weaviate</h1></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-22c16b" data-block-id="7f9fac4f24eec5d31cf59627e96d2d3a" style="width: 960.001px; height: 320.658px; left: -0.0009999px; top: 95.671px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13; border-style: solid; border-radius: 15px;"><img class="" data-natural-width="973" data-natural-height="325" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/e0ee9237563f8da01e8a4847e1c3d0f7.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-db598c" data-block-id="d1a87d3b41ffd53ef20f28fc65b9ac76" style="height: auto; width: 428px; left: 20.5px; top: 479.329px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; text-align: left; color: rgb(255, 255, 255);">
+<p><a href="https://github.com/nmslib/hnswlib" target="_blank">HNSWlib</a></p>
+
+<ul>
+	<li>open-source library</li>
+	<li>lacking full database operations and functionality</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 428px; left: 511.5px; top: 479.329px;" data-block-id="e6b88d6d8db45ebc23b333df5162a598" data-name="text-313601"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; text-align: left; color: rgb(255, 255, 255);">
+<p><a href="https://weaviate.io/developers/weaviate/concepts/vector-index#hierarchical-navigable-small-world-hnsw-index" target="_blank">Weaviate</a></p>
+
+<ul>
+	<li>open-source <em>database</em>
+</li>
+	<li>supports full CRUD operations and modularity functions</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-94eb31" data-block-id="616b7f5baf6e09855405df9521e959a9" style="width: 469px; height: 222px; left: 0px; top: 451.329px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 11;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 469 222"><rect width="469" height="222" rx="15" ry="15" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 469px; height: 222px; left: 491px; top: 448.329px;" data-block-id="119943cd5016cc99f67fe7aa4a64073c" data-name="shape-700a1f"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 10;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 469 222"><rect width="469" height="222" rx="15" ry="15" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="d2712e90c0dbd16bff312b941c251228">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 600px; left: 180px; top: 220px;" data-block-id="b339fe1f6927172e75467f35ab98816a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); font-size: 136%;"><h1>Vector search isn't limited to just text</h1></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-44f15c" data-block-id="a9cdfb9ba61a36ecfd2c7d2d1115e651" style="min-width: 30px; min-height: 30px; width: 679px; height: 679px; left: -273.5px; top: -247.5px;"><div class="sl-block-style" style="z-index: 10; opacity: 0.8;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927667" data-video-thumb="ds-dojo-2-intro-to-vector-search/22ee9fb8bf5b270119476c3d421c3031.jpg"><video playsinline="" data-autoplay="" muted="" poster="ds-dojo-2-intro-to-vector-search/22ee9fb8bf5b270119476c3d421c3031.jpg" data-paused-by-reveal="" loop="loop" data-src="ds-dojo-2-intro-to-vector-search/bc3ed8427f94803e656a1bd6d55e7147.mp4"></video></div></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="f2b410e3cca4d2973841a99fbdfe57ac">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-b78ae3" style="height: auto; width: 582px; left: 189px; top: 27.678px;" data-block-id="6b8732d2b0f9b6f9ea61bc2a22c499aa"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255);"><h2>multimodal vector search</h2></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-c4ad98" style="width: 915.846px; height: 635.983px; left: 22.077px; top: 93.678px; min-width: 1px; min-height: 1px;" data-block-id="04163849f603c45b0333c5a55da117dc"><div class="sl-block-content" style="z-index: 12; border-style: solid; border-radius: 15px;"><img class="" data-natural-width="1201" data-natural-height="834" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/f611a0d6734ab4fb5683b372598d8d5e.png"></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-44f15c" style="min-width: 30px; min-height: 30px; width: 679px; height: 679px; left: 590.5px; top: 340.5px;" data-block-id="8aaaba8c9328967bd08f664ac330c4d0"><div class="sl-block-style" style="z-index: 10; opacity: 0.8; transform: rotate(-150deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927667" data-video-thumb="ds-dojo-2-intro-to-vector-search/22ee9fb8bf5b270119476c3d421c3031.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="ds-dojo-2-intro-to-vector-search/22ee9fb8bf5b270119476c3d421c3031.jpg" data-paused-by-reveal="" data-src="ds-dojo-2-intro-to-vector-search/bc3ed8427f94803e656a1bd6d55e7147.mp4"></video></div></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="4ee8fbc62238808a59ad1ee52f101215">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-b78ae3" style="height: auto; width: 582px; left: 189px; top: 27.678px;" data-block-id="2ed682bbc139e88898cad526d7b4db7a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255);"><h2>multilingual vector search</h2></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-722875" data-block-id="96b2144d4ea4537b47e2eba0ec96f59a" style="width: 1029.32px; height: 539px; left: -34.66px; top: 123px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12; border-style: solid; border-radius: 15px;"><img class="" data-natural-width="888" data-natural-height="465" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/4111214f8a0190c85220d54f7167a412.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-bf96ec" data-block-id="7bd18ecdbabfa359e9c7a5ee18b148cd" style="width: 383.91px; height: 149px; left: 0px; top: 479.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13; border-style: solid; border-radius: 15px;"><img class="" data-natural-width="286" data-natural-height="111" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/e3625b6e2979a811efbc56e8e7f81025.png"></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-44f15c" style="min-width: 30px; min-height: 30px; width: 679px; height: 679px; left: 633.5px; top: -298.5px;" data-block-id="ed13c192c6aeab77aaa243e701d8c66d"><div class="sl-block-style" style="z-index: 10; opacity: 0.8; transform: rotate(120deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927667" data-video-thumb="ds-dojo-2-intro-to-vector-search/22ee9fb8bf5b270119476c3d421c3031.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="ds-dojo-2-intro-to-vector-search/22ee9fb8bf5b270119476c3d421c3031.jpg" data-paused-by-reveal="" data-src="ds-dojo-2-intro-to-vector-search/bc3ed8427f94803e656a1bd6d55e7147.mp4"></video></div></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="d4d822f3e396e1a4c0e0f0b4fb6ceeba">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 898px; left: 31px; top: 201px;" data-block-id="d1b90fbed84cdab5e3558fc5259afed0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); font-size: 234%;"><h1>what does at scale mean?</h1></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-44f15c" style="min-width: 30px; min-height: 30px; width: 1086px; height: 1086px; left: 345.5px; top: -486.5px;" data-block-id="a6a35fa0847686f6510c46bb9b67a228"><div class="sl-block-style" style="z-index: 10; opacity: 0.8; transform: rotate(180deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927667" data-video-thumb="ds-dojo-2-intro-to-vector-search/22ee9fb8bf5b270119476c3d421c3031.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="ds-dojo-2-intro-to-vector-search/22ee9fb8bf5b270119476c3d421c3031.jpg" data-paused-by-reveal="" data-src="ds-dojo-2-intro-to-vector-search/bc3ed8427f94803e656a1bd6d55e7147.mp4"></video></div></div></div></section><section data-background-color="rgb(255, 255, 255)" data-auto-animate="" data-id="c36bc79641e9c4ccbea63e4a5c762f63">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 600px; left: 180px; top: 59.5px;" data-block-id="a945c3dc31234f1373ccca944c19e75f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><h2>The difference between...</h2></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4c21a8" data-block-id="b0d627cd47e00d80aded87f5b15d6e2a" style="width: 1052.44px; height: 592px; left: -1.42109e-14px; top: 80px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="960" data-natural-height="540" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/e616d7104da62a4b7d41b338c2171f9d.png"></div></div></section><section data-background-color="rgb(255, 255, 255)" data-auto-animate="" data-id="e468c2fd20f204169977f40e74e78930">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 600px; left: 180px; top: 59.5px;" data-block-id="d7cee9a3d2a7232ab668e0838f1e9bab"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><h2>The difference between...</h2></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-39bf96" data-block-id="452efd5404f46b49794a63b1c565691d" style="width: 741.861px; height: 309px; left: 109.07px; top: 195.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="569" data-natural-height="237" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/e669070144cab8db7c4620db186049ae.png"></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="9326588b5873272022f4d496c35f9e1b">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 802px; left: 39.5px; top: 9.5px;" data-block-id="782c7cb431bbd14b99c40931fd15ff51"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 126%; color: rgb(255, 255, 255);"><h2 style="text-align: left;">So when we say we do billion-scale vector search, it's kinda a big deal</h2></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-c54c1b" style="width: 581.106px; height: 586px; left: 339.394px; top: 127px; min-width: 1px; min-height: 1px;" data-block-id="59304e2533dcb8675a1eec2c5ba70052"><div class="sl-block-content" style="z-index: 12; border-style: solid; border-radius: 15px;"><img class="" data-natural-width="950" data-natural-height="958" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/a404ed17a49d9c2729872b4485a519e2.png"></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-cadd78" data-block-id="bce42ea094594eabfe144eaefe9fc1ea" style="min-width: 30px; min-height: 30px; width: 732px; height: 732px; left: -224px; top: 287px;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927662" data-video-thumb="ds-dojo-2-intro-to-vector-search/c007bd4b36124f8292bb8680dc560e86.jpg"><video playsinline="" poster="ds-dojo-2-intro-to-vector-search/c007bd4b36124f8292bb8680dc560e86.jpg" data-paused-by-reveal="" data-autoplay="" muted="" loop="loop" data-src="ds-dojo-2-intro-to-vector-search/25c27b95d1a3f6d260e29cde9853ea00.mp4"></video></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="68340c7718bd205084f1d731e5ee02e4">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 600px; left: 180px; top: 286.5px;" data-block-id="a2c092ba0f48b64a6150633b95a69a03"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 200%; color: rgb(255, 255, 255);"><h1>demo time</h1></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-cadd78" style="min-width: 30px; min-height: 30px; width: 865.358px; height: 865.358px; left: 577.242px; top: 116.656px;" data-block-id="a9f92dbdab94f9b1b58ec7af40c51831"><div class="sl-block-style" style="z-index: 10; transform: rotate(-75deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927662" data-video-thumb="ds-dojo-2-intro-to-vector-search/c007bd4b36124f8292bb8680dc560e86.jpg"><video playsinline="" poster="ds-dojo-2-intro-to-vector-search/c007bd4b36124f8292bb8680dc560e86.jpg" data-paused-by-reveal="" data-autoplay="" muted="" loop="loop" data-src="ds-dojo-2-intro-to-vector-search/25c27b95d1a3f6d260e29cde9853ea00.mp4"></video></div></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="6fe5a4c2534c45cc00fb1dfb8925e358">
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 0px; top: 99px; height: auto;" data-name="text-c70df5" data-block-id="b7a5c641e6897d4cae3443b2e3b50053"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); text-align: left; font-size: 125%;"><h1><span style="font-size:0.9em">next webinar!</span></h1></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 305px; height: 284px; left: 10px; top: 272px;" data-name="shape-ddb7dc" data-block-id="1c48267b692c3633b88275ddc4e9b483"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 13;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 305 284"><rect width="305" height="284" rx="15" ry="15" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 0px; top: 179px; height: auto;" data-block-id="9a9d98381a77d2abbd19021d8f4227cd" data-name="text-279a54"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 14; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); text-align: left; font-size: 125%;"><p><span style="font-size:0.9em">with Data Science Dojo</span></p></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 305px; height: 284px; left: 704.5px; top: 414px;" data-block-id="50afe05ddc485221a2e19eeb69a8e758" data-name="shape-40b1a5"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 15;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 305 284"><rect width="305" height="284" rx="15" ry="15" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="image" style="width: 267px; height: 267px; left: 723.5px; top: 422.5px; min-width: 1px; min-height: 1px;" data-block-id="b2484f41a507f3ea730a8ecac49ec5c4" data-name="image-c7113f"><div class="sl-block-content" style="z-index: 16;"><img class="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/1e65307be1976ce4f6b093f81e9cb7f4.png"></div></div>
+
+<div class="sl-block" data-block-type="image" data-name="image-8a87b8" data-block-id="267bdf8515b51286ccf4bc3d0d152623" style="width: 606.836px; height: 336px; left: 386.082px; top: 254.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11; border-style: solid; border-radius: 15px;"><img class="" data-natural-width="1616" data-natural-height="834" data-crop-x="0" data-crop-y="0" data-crop-width="0.841886" data-crop-height="0.903226" style="left: 0px; top: 0px; width: 721px; height: 372px;" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/55c93b95e2c68cae95c3c84a5359d2c3.png"></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-9792ed" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 0px; top: 139px;" data-block-id="8d1b83b0281628ca0f592e49548e6077"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="6" data-line-y2="180.5" data-line-color="rgb(255, 255, 255)" data-line-width="6px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 17;" data-line-c="73"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="6" height="180.5" viewbox="0 0 6 180.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="rgb(255, 255, 255)" stroke-width="6" stroke-linecap="round" d="M0 0 A92.346 92.346 0 0 0 0.133 179.247"></path><path stroke="rgb(255, 255, 255)" stroke-width="6" d="M -5.501 163.228 L 3.826 179.886 L -12.833 189.213 L 3.826 179.886" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 A92.35 92.35 0 0 0 6 180.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 A92.35 92.35 0 0 0 6 180.5"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-aab944" data-block-id="f492358187f79d6b8be98458728dd975" style="height: auto; width: 600px; left: 480px; top: 272px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; color: rgb(255, 255, 255);"><h2>connect with me on LinkedIn!</h2></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-03683d" data-block-id="71c9b0da8826688544e5e5b763b3ff5a" style="width: 270px; height: 270px; left: 27.5px; top: 279px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 19;"><img class="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="ds-dojo-2-intro-to-vector-search/c8e1438b62d1efa9faf7e306002d56ab.png"></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-cadd78" style="min-width: 30px; min-height: 30px; width: 865.358px; height: 865.358px; left: -432.679px; top: 276.242px;" data-block-id="a4d6886b727447899a306830b5ce0c1a"><div class="sl-block-style" style="z-index: 10; transform: rotate(165deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927662" data-video-thumb="ds-dojo-2-intro-to-vector-search/c007bd4b36124f8292bb8680dc560e86.jpg"><video playsinline="" poster="ds-dojo-2-intro-to-vector-search/c007bd4b36124f8292bb8680dc560e86.jpg" data-paused-by-reveal="" data-autoplay="" muted="" loop="loop" data-src="ds-dojo-2-intro-to-vector-search/25c27b95d1a3f6d260e29cde9853ea00.mp4"></video></div></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":3347016,"slug":"ds-dojo-2-intro-to-vector-search","title":"Data Science Dojo Webinar 2: Intro to Vector Search","description":"","width":960,"height":700,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/984913538dba7be5c21af0d396a4725b/thumb.jpg?1739273985","view_count":0,"user":{"id":2603834,"username":"victoriaslocum","name":"Victoria Slocum","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocLuv0CJobWTLW0FYgpwuICNUOqovE2aTUnNk7cQKQ7VFiE=s96-c","account_type":"pro","team_id":null,"settings":{"id":57202564,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"fade","transition":"slide","theme_id":null,"theme_font":"overpass2","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":23,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1739277896928,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"language":"en","notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "fade",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>
