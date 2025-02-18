@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "Data Science Dojo Webinar 3: AI in the Real World"}' />
+		<title>Data Science Dojo Webinar 3: AI in the Real World</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-overpass2 theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="a340adae645bb2a2454cf9be34a5c924" data-background-color="rgb(1, 1, 1)" data-auto-animate="">
+
+
+<div class="sl-block" data-block-type="text" data-name="text-2767df" data-block-id="871b006518c1480a3e2a7e166ee7811f" style="height: auto; width: 600px; left: 162px; top: 439.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255); font-size: 90%; text-align: center;"><h3>Data Science Dojo &amp; Weaviate</h3></div></div>
+<div class="sl-block" data-block-type="text" style="width: 940px; left: 10px; top: 194.5px; height: auto;" data-block-id="519c197d0a771f4babc1413be8e05d42" data-name="text-3de096"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 13; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); font-size: 134%; text-align: center; border-color: rgb(255, 255, 255);">
+<h1><strong style="background-color:rgba(0, 0, 0, 0); font-family:overpass 2,sans-serif"><span style="font-size:78.792px">AI in the</span></strong></h1>
+
+<h1><strong style="background-color:rgba(0, 0, 0, 0); font-family:overpass 2,sans-serif"><span style="font-size:1.4em; letter-spacing:0.015em">Real world</span></strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="video" data-name="video-54c0a6" data-block-id="2dd61b76a853c8c341ae861c07a68167" style="min-width: 30px; min-height: 30px; width: 1003px; height: 1003px; left: -21.5px; top: -151.5px;"><div class="sl-block-style" style="z-index: 10; opacity: 0.85;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941150" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/52b4037555c3bc0fcd0302c1886b82d5.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/52b4037555c3bc0fcd0302c1886b82d5.jpg" data-paused-by-reveal="" muted="" loop="loop" data-autoplay="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/21ea2c7e7bcc42235fd864a0b8444f1e.mp4"></video></div></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="b65bad6a2be91472860a94149108790d">
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 119px; top: 194px; height: auto;" data-name="text-c70df5" data-block-id="bb3f108bc705fe20423477fe0fe77ff6"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); text-align: left; font-size: 129%;"><h1><span style="font-size:0.9em">Victoria Slocum</span></h1></div></div>
+
+<div class="sl-block" data-block-type="text" data-name="text-3f3a33" data-block-id="3137a93535c075982ad9ab4dfe05e75a" style="height: auto; width: 600px; left: 119px; top: 276px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255); text-align: left;"><h2>Machine Learning Engineer</h2></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-c2beb6" style="width: 525.5px; height: 525.5px; left: 532.5px; top: 214px; min-width: 1px; min-height: 1px;" data-block-id="d217e040b199bc9464eb5f53a8f1b77f"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="1350" data-natural-height="1350" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/2373140cf326537d3c15ebf75f037ff4.png"></div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-f3a0b0" style="width: 305px; height: 284px; left: 119px; top: 367px;" data-block-id="11d40927f8c81910f6c1d3f24c271a35"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 14;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 305 284"><rect width="305" height="284" rx="15" ry="15" class="shape-element" fill="rgb(238, 238, 238)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 305px; height: 284px; left: 119px; top: 367px;" data-name="shape-ddb7dc" data-block-id="7adbd9f7c8789f2e295e8b5bf1250075"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 15;" data-shape-corner-radius="15px" data-shape-stroke-color="#000000" data-shape-stroke-width="1px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 305 284"><defs><clippath id="shape-mask-2-1738767883220"><rect width="305" height="284" rx="15" ry="15" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2"></rect></clippath></defs><rect width="305" height="284" rx="15" ry="15" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2" clip-path="url(#shape-mask-2-1738767883220)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-bbb421" data-block-id="5117f33f6c4ff1f4a1dcb057f11ae0bd" style="width: 267px; height: 267px; left: 138px; top: 375.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 16;"><img class="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/1e65307be1976ce4f6b093f81e9cb7f4.png"></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-54c0a6" style="min-width: 30px; min-height: 30px; width: 899.258px; height: 899.258px; left: 138.787px; top: -38.94px;" data-block-id="4c1ce74478ec556346688b2c4298211c"><div class="sl-block-style" style="z-index: 10; transform: rotate(120deg); opacity: 0.8;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941150" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/52b4037555c3bc0fcd0302c1886b82d5.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/52b4037555c3bc0fcd0302c1886b82d5.jpg" data-paused-by-reveal="" muted="" loop="loop" data-autoplay="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/21ea2c7e7bcc42235fd864a0b8444f1e.mp4"></video></div></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="b5a0755e97226a7584819e2a0bb330c2">
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="video" data-name="video-54c0a6" style="width: 626.78px; height: 626.78px; left: -90.841px; top: -83.4887px;" data-block-id="68f64ae2ec9a299c3e1bdac7c0c4290d"><div class="sl-block-style" style="z-index: 10; transform: rotate(30deg); opacity: 0.8;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941150" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/52b4037555c3bc0fcd0302c1886b82d5.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/52b4037555c3bc0fcd0302c1886b82d5.jpg" data-paused-by-reveal="" muted="" loop="loop" data-autoplay="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/21ea2c7e7bcc42235fd864a0b8444f1e.mp4"></video></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 119px; top: 162.583px; height: auto;" data-block-id="0d5de7f09b35128ca6f9e42b77d22ae8" data-name="text-b2e72a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); text-align: left; font-size: 129%;"><h2><span style="font-size:0.9em">webinar #1</span></h2></div></div>
+<div class="sl-block" data-block-type="iframe" data-name="iframe-09c309" data-block-id="d1103aef892cc8be74a66e6bcdf91972" style="width: 704px; height: 445.417px; left: 119px; top: 212.583px;"><div class="sl-block-content" style="z-index: 14;"><iframe allow="fullscreen; autoplay; accelerometer; geolocation; gyroscope; camera; encrypted-media; microphone; midi" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock allow-presentation" data-preload="true" data-lazy-loaded="" data-src="https://slides.victoriaslocum.com/slides/Vector-Embeddings/index.html"></iframe></div></div></section><section data-background-color="rgb(255, 255, 255)" data-auto-animate="" data-id="f5c5535ab82646f5888f03eedd9bd4af">
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="video" data-name="video-0ea4d9" data-block-id="3ed76e6bd05509f6a096c578d11c1ea9" style="min-width: 30px; min-height: 30px; width: 1295.7px; height: 829px; left: -167.85px; top: -103px;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11878521" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/c07ee17aa17e720585c2d8751dee63fc.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/c07ee17aa17e720585c2d8751dee63fc.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/2758f8ce3b0827cddd8d7fb45b761f15.mp4"></video></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="c5783947aa5643fa9374b064daacda42">
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-1342df" style="height: auto; width: 723px; left: 118.5px; top: 233.5px;" data-block-id="b5ba8d79d7756c4c50d2876613e81b43"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255);">
+<p>Each number represents how much red, green, or blue is in the color.</p>
+
+<p><span style="font-size:1.4em"><strong>This is exactly what a vector embedding is - a sequence of numbers that represents meaning.</strong></span></p>
+</div></div>
+<div class="sl-block" data-block-type="video" data-name="video-b27766" data-block-id="71351e83c908c227f8f59246ba439597" style="min-width: 30px; min-height: 30px; width: 700px; height: 700px; left: 130px; top: 0px;"><div class="sl-block-style" style="z-index: 10; opacity: 0.75;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941158" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/210c58128e9bbe884f30613e44bcc3de.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/210c58128e9bbe884f30613e44bcc3de.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/fe4147ebcdb638c2d3d4782dd1421534.mp4"></video></div></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="b74cf6e3258e58b1b9236fefe9eeb893">
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="video" data-name="video-b27766" style="width: 976px; height: 976px; left: -8px; top: -138px;" data-block-id="8fc7f660f22149b847ed31a2b95465d6"><div class="sl-block-style" style="z-index: 10; opacity: 0.75; transform: rotate(90deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941158" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/210c58128e9bbe884f30613e44bcc3de.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/210c58128e9bbe884f30613e44bcc3de.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/fe4147ebcdb638c2d3d4782dd1421534.mp4"></video></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f35ec8" style="height: auto; width: 342px; left: 309px; top: 216.125px;" data-block-id="29e35af7a9696927f248f5e4a9ec315c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255);"><h1>so...</h1></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 648px; left: 156px; top: 292.875px;" data-name="text-c811b4" data-block-id="72f5dca64869b7992b8db0214db03293"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(255, 255, 255);"><h1>how do you actually choose an embedding model?</h1></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="d81c871991696990c2f35a5705e58535">
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="video" data-name="video-b27766" style="width: 976px; height: 976px; left: -8px; top: -138px;" data-block-id="4870ba521b6cdd934f19aac63eef5153"><div class="sl-block-style" style="z-index: 10; opacity: 0.75; transform: rotate(90deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941158" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/210c58128e9bbe884f30613e44bcc3de.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/210c58128e9bbe884f30613e44bcc3de.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/fe4147ebcdb638c2d3d4782dd1421534.mp4"></video></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f35ec8" style="height: auto; width: 342px; left: 50px; top: 116.75px;" data-block-id="ac3cb0a7312fab50a105d2fbe237f9fa"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255);"><h2>Data Performance</h2></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 361px; left: 558.5px; top: 116.75px;" data-name="text-c811b4" data-block-id="585a3225f86b97cda82f6a2602ac5f78"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255);"><h2>Infrastructure considerations</h2></div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-27e5e5" style="width: 397px; height: 91px; left: 22.5px; top: 242.75px;" data-block-id="557fe04a05f270c4fef22cbaaa5561d3"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 13;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 397 91"><rect width="397" height="91" rx="15" ry="15" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 397px; height: 91px; left: 540.5px; top: 242.75px;" data-name="shape-582a39" data-block-id="3a674fc7e7c4bcbeed28246a9e477b13"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 14;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 397 91"><rect width="397" height="91" rx="15" ry="15" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 397px; height: 91px; left: 22.5px; top: 367.25px;" data-name="shape-400cc9" data-block-id="202ec8b135be4d572ac75f18d9157f46"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 15;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 397 91"><rect width="397" height="91" rx="15" ry="15" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 397px; height: 91px; left: 22.5px; top: 492.25px;" data-name="shape-cab2ef" data-block-id="39341cd51ee71a37f3f2653c57b5c327"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 16;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 397 91"><rect width="397" height="91" rx="15" ry="15" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 397px; height: 91px; left: 540.5px; top: 367.25px;" data-name="shape-4a2952" data-block-id="811aaea40e66030a1934c71efcc612e2"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 17;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 397 91"><rect width="397" height="91" rx="15" ry="15" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 397px; height: 91px; left: 540.5px; top: 492.25px;" data-name="shape-807dd7" data-block-id="e73df42612f151d317a6cf9e3fb63361"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 18;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 397 91"><rect width="397" height="91" rx="15" ry="15" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-86f636" style="height: auto; width: 397px; left: 22.5px; top: 270.25px;" data-block-id="c8c7ae771579a47b38cb0eb768bd6504"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; color: rgb(255, 255, 255);"><h3><strong>Language Specificity</strong></h3></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 397px; left: 22.5px; top: 395px;" data-name="text-8283c1" data-block-id="494ff2ef6bc38aa8921d699665585aae"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(255, 255, 255);"><h3><strong>domain Specificity</strong></h3></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 397px; left: 22.5px; top: 506.5px;" data-name="text-ea3a48" data-block-id="a8d4047172042863553253c3296845f3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; color: rgb(255, 255, 255); line-height: 0.871;" data-has-line-height="">
+<h3><strong>comparison/</strong></h3>
+
+<h3><strong>benchmarking</strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 397px; left: 540.5px; top: 270.25px;" data-name="text-82cfc7" data-block-id="992f5d145b18f52ed8050b9f1319f8c8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; color: rgb(255, 255, 255);"><h3><strong>inference costs</strong></h3></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 397px; left: 540.5px; top: 395px;" data-name="text-d5ffc4" data-block-id="2d20d7081524b50d273546da02d3bce8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23; color: rgb(255, 255, 255);"><h3><strong>storage costs</strong></h3></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 397px; left: 540.5px; top: 506.5px;" data-name="text-cdb455" data-block-id="26914fe1a1188171427c01f11953736a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24; color: rgb(255, 255, 255); line-height: 0.871;" data-has-line-height="">
+<h3><strong>latency / </strong></h3>
+
+<h3><strong>throughput</strong></h3>
+</div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="73d5fee3aef2cdd89797da697baac605">
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="video" data-name="video-b27766" style="width: 757px; height: 757px; left: 101.5px; top: -28.5px;" data-block-id="b90e04a39b7154420e3aa1b44977c5c7"><div class="sl-block-style" style="z-index: 10; opacity: 0.75;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941158" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/210c58128e9bbe884f30613e44bcc3de.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/210c58128e9bbe884f30613e44bcc3de.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/fe4147ebcdb638c2d3d4782dd1421534.mp4"></video></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f35ec8" style="height: auto; width: 613px; left: 173.5px; top: 246px;" data-block-id="cf6ae6d346bf37c051542018af9be42e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); font-size: 163%;"><h1>ML is full of trade-offs</h1></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="791affdaf8f1f27f7840753f2b5633e8">
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 119px; top: 162.583px; height: auto;" data-name="text-b2e72a" data-block-id="b7e700dfe89629ca16a7414d6c4b6cc2"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); text-align: left; font-size: 129%;"><h2><span style="font-size:0.9em">webinar #2</span></h2></div></div>
+<div class="sl-block" data-block-type="iframe" data-name="iframe-09c309" style="width: 704px; height: 445.417px; left: 119px; top: 212.583px;" data-block-id="808efb7e4e4a522f2296ab0cad8d1541"><div class="sl-block-content" style="z-index: 12;"><iframe allow="fullscreen; autoplay; accelerometer; geolocation; gyroscope; camera; encrypted-media; microphone; midi" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock allow-presentation" data-preload="true" data-lazy-loaded="" data-src="https://slides.victoriaslocum.com/slides/Vector-Search/index.html"></iframe></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-61a612" style="min-width: 30px; min-height: 30px; width: 583.5px; height: 583.5px; left: -51.25px; top: -75.167px;" data-block-id="9e19baf20de64c3648152f9ff5056e6a"><div class="sl-block-style" style="z-index: 10; opacity: 0.75; transform: rotate(-122deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927471" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/6a81da303259374dd40ba315c14c65f7.mp4"></video></div></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="1d4221ca0f7e20cddac85a2f534b1c13">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" data-block-id="90a6f7828bbf6389c3ae60cc8c5d53fa" style="height: auto; width: 600px; left: 180px; top: 206px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 114%; color: rgb(255, 255, 255);">
+<h1>search systems</h1>
+
+<h1>run the world</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-5c3ada" data-block-id="dddd58554e2019b44c7870a12d86eb3b" style="height: auto; width: 452px; left: 240px; top: 393px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: center; color: rgb(255, 255, 255);">
+<p><strong>Search systems are everywhere,</strong> </p>
+
+<p>from Google, to e-commerce sites, to internal documents</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-ac5789" data-block-id="294825159ffb7d8e29904807a77ac64d" style="width: 449px; height: 47px; left: 240px; top: 386px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#3828a4" data-shape-stretch="true" style="z-index: 11;" data-shape-corner-radius="5px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 449 47"><rect width="449" height="47" rx="5" ry="5" class="shape-element" fill="#3828a4"></rect></svg></div></div>
+
+<div class="sl-block" data-block-type="video" data-name="video-61a612" data-block-id="46b302a5f862bd2948128aae3f514541" style="min-width: 30px; min-height: 30px; width: 775.5px; height: 775.5px; left: 76.75px; top: -37.75px;"><div class="sl-block-style" style="z-index: 10; opacity: 0.75;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927471" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/6a81da303259374dd40ba315c14c65f7.mp4"></video></div></div></div></section><section data-background-color="rgb(255, 255, 255)" data-auto-animate="" data-id="a45e46d22931f8265e6c1512e880a066">
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="video" data-name="video-5ce470" data-block-id="1266695944db1f1d8360b989c5e7420c" style="min-width: 30px; min-height: 30px; width: 1048px; height: 393px; left: -44px; top: 153.5px;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11219930" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/9dc0ff7ab94d2214f81b88ee3f63a51d.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/9dc0ff7ab94d2214f81b88ee3f63a51d.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/80c0a40f8752dfcd500d42400c465847.mp4"></video></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="57a2db1be2297c441ee8ec1b82b06d79">
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="video" data-name="video-c60b1f" style="width: 1061px; height: 1061px; left: -50.5px; top: 22.57px;" data-block-id="6e001efc421ffe370f49cc0e933a9266"><div class="sl-block-style" style="z-index: 10; opacity: 0.6; transform: rotate(0deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941161" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/62840235b4fdc1503282b71fa661040f.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="data-science-dojo-webinar-3-real-world-ai/62840235b4fdc1503282b71fa661040f.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/feea8c9cef32d793ee516cde4f1b449c.mp4"></video></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-44b7b9" data-block-id="945f2446a4f9136aa5d4c62eba7331ae" style="height: auto; width: 691px; left: 134.5px; top: 233.25px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); font-size: 108%;"><h1>basic Vector search is just* math</h1></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 382.75px;" data-block-id="d169b9e776fd0679375a2f99a63cabad" data-name="text-49ef54"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255);"><h2>the weird ml part is all in the vector embeddings</h2></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="eacb0ad9f394b1371ce944c2386779a1">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 690px; left: 135px; top: 242px;" data-block-id="890aa5899ff78db7f6a38986209c76a5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255);">
+<h1><span style="font-size:1.2em"><strong>So...</strong></span></h1>
+
+<h1>why do you even need a vector database?</h1>
+</div></div>
+<div class="sl-block" data-block-type="video" data-name="video-c60b1f" style="min-width: 30px; min-height: 30px; width: 948px; height: 948px; left: 300.5px; top: 5.68434e-14px;" data-block-id="1cf4fbdb757abee0a8ea063d3b464c17"><div class="sl-block-style" style="z-index: 10; opacity: 0.8; transform: rotate(90deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941158" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/210c58128e9bbe884f30613e44bcc3de.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="data-science-dojo-webinar-3-real-world-ai/210c58128e9bbe884f30613e44bcc3de.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/fe4147ebcdb638c2d3d4782dd1421534.mp4"></video></div></div></div></section><section data-background-color="rgb(255, 255, 255)" data-auto-animate="" data-id="533dbfb4184bbf064c25ef3e4f9e027e">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 690px; left: 135px; top: 10px;" data-block-id="f52c77864aba14f2070eb8c4a52fd2a8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><h1>why do you even need a vector database?</h1></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-fa4b1f" data-block-id="0157edaa455aa0ef240913c2411085e5" style="width: 600.252px; height: 476px; left: 179.874px; top: 213px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1000" data-natural-height="793" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/9e9d0c452189122d42e20893fefde847.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-31f3a6" data-block-id="b28baed01784a025a499748545b6a6c4" style="height: auto; width: 600px; left: 434px; top: 510px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p><strong>ANN</strong></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 434px; top: 213px;" data-block-id="707021d750f45486e7c8dd4fe25f9ef2" data-name="text-1adb14"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;"><p><strong>kNN</strong></p></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="d4d822f3e396e1a4c0e0f0b4fb6ceeba">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 898px; left: 31px; top: 201px;" data-block-id="d1b90fbed84cdab5e3558fc5259afed0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); font-size: 167%;"><h1>what does at scale mean?</h1></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-44f15c" style="min-width: 30px; min-height: 30px; width: 1086px; height: 1086px; left: 188.5px; top: -260.5px;" data-block-id="a6a35fa0847686f6510c46bb9b67a228"><div class="sl-block-style" style="z-index: 10; opacity: 0.8; transform: rotate(180deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941152" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/1180fec4f47497e7a4f5346bb0e9dab7.mp4"></video></div></div></div></section><section data-background-color="rgb(255, 255, 255)" data-auto-animate="" data-id="c36bc79641e9c4ccbea63e4a5c762f63">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 600px; left: 180px; top: 59.5px;" data-block-id="a945c3dc31234f1373ccca944c19e75f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><h2>The difference between...</h2></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4c21a8" data-block-id="b0d627cd47e00d80aded87f5b15d6e2a" style="width: 1052.44px; height: 592px; left: -1.42109e-14px; top: 80px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="960" data-natural-height="540" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/e616d7104da62a4b7d41b338c2171f9d.png"></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="3e59264a3724bc2a5f7408b75a38d101">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 898px; left: 31px; top: 251.5px;" data-block-id="df150d0f2ef2220aa2427b4f1e614941"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); font-size: 167%;">
+<h1>AI apps </h1>
+
+<h2>in the real world</h2>
+</div></div>
+<div class="sl-block" data-block-type="video" data-name="video-44f15c" style="width: 1086px; height: 1086px; left: -63px; top: -193px;" data-block-id="bfc04248e4649fa5bd78c9e2eec4d6dd"><div class="sl-block-style" style="z-index: 10; opacity: 0.8; transform: rotate(180deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941152" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/1180fec4f47497e7a4f5346bb0e9dab7.mp4"></video></div></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="c2f6b6703f9ae5ecac33ab367757fd79">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-9be675" style="height: auto; width: 898px; left: 31px; top: 280.5px;" data-block-id="88d063eaa51b16a8c3596e11d6cdea2f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); font-size: 118%;">
+<h1>AI apps </h1>
+
+<h2>in the real world</h2>
+</div></div>
+<div class="sl-block" data-block-type="video" data-name="video-44f15c" style="width: 1086px; height: 1086px; left: -63px; top: -175px;" data-block-id="6a6a5f041e2e6b99ce3bd1c66ae24ab3"><div class="sl-block-style" style="z-index: 10; opacity: 0.8; transform: rotate(-45deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941152" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/1180fec4f47497e7a4f5346bb0e9dab7.mp4"></video></div></div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-b1cdf9" data-block-id="52658281f680e0a59b6afd89cf1ed391" style="width: 307px; height: 157px; left: 16px; top: 41px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 12;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 307 157"><rect width="307" height="157" rx="15" ry="15" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-671c30" data-block-id="bc422d0754570eac1640ba3195919823" style="height: auto; width: 47px; left: 25px; top: 58px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255); font-size: 219%;"><h1>1</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-2d24d2" data-block-id="97cb3694aa6deb3233f89c96f824f188" style="height: auto; width: 219px; left: 95px; top: 86px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255);"><h2 style="text-align: left;">Search at scale</h2></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 364px; height: 157px; left: 585px; top: 41px;" data-block-id="3303a261de3e37d3b1d39541f5137e4a" data-name="shape-de3039"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 15;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 364 157"><rect width="364" height="157" rx="15" ry="15" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 47px; left: 608px; top: 58px;" data-block-id="35cb3446fc82976f47b9de7629e7bf56" data-name="text-1dd281"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(255, 255, 255); font-size: 219%;"><h1>2</h1></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 253px; left: 696px; top: 65px;" data-block-id="111ce6ea72f04b457c0d0f4495b2baf9" data-name="text-d22731"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(255, 255, 255); font-size: 90%;"><h2 style="text-align:left">Retreival augmented generation</h2></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 333px; height: 157px; left: 16px; top: 513px;" data-block-id="5c6920bbef98e3ece0dbc4f8bbaf8ec4" data-name="shape-7de544"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 18;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 333 157"><rect width="333" height="157" rx="15" ry="15" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 47px; left: 16px; top: 530px;" data-block-id="b22d19727f462f0fdd53d6b5945fd5a0" data-name="text-59fceb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; color: rgb(255, 255, 255); font-size: 219%;"><h1>3</h1></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 219px; left: 95px; top: 558px;" data-block-id="0fe9d4fa2a027912fa07ee82d83339b9" data-name="text-dfb955"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(255, 255, 255);"><h2 style="text-align:left">ecommercewith ai</h2></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 364px; height: 157px; left: 585px; top: 513px;" data-block-id="02427630b9883b1322325e43efe6df5c" data-name="shape-1ef944"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 21;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 364 157"><rect width="364" height="157" rx="15" ry="15" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 47px; left: 608px; top: 530px;" data-block-id="98d902f1599ece57d9fdd248c28929c4" data-name="text-719dc4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; color: rgb(255, 255, 255); font-size: 219%;"><h1>4</h1></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 253px; left: 696px; top: 558px;" data-block-id="c63cab80427698d4101a9da1928eaf4a" data-name="text-98aa7c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23; color: rgb(255, 255, 255);"><h2 style="text-align:left">agentic workflows</h2></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="baac23ded6b38f090bdf6d2944bf4387">
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="video" data-name="video-44f15c" style="width: 644.765px; height: 644.765px; left: 175.617px; top: 64.618px;" data-block-id="ffbbdf7de9a6c517a344c3828d28f112"><div class="sl-block-style" style="z-index: 10; opacity: 0.8; transform: rotate(-148deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941152" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/1180fec4f47497e7a4f5346bb0e9dab7.mp4"></video></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-2d24d2" style="height: auto; width: 577px; left: 191.5px; top: 22.0005px;" data-block-id="ea6829cdfdd4ddbafc51d1ee0570117d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); text-align: center;"><h1>Search at scale</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fed470" data-block-id="d9817d355ab89fbea1c507ce3040d78f" style="height: auto; width: 298px; left: 39.4995px; top: 177px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255);"><h3>flexible deployment &amp; architecture</h3></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 280px; left: 667.5px; top: 195px;" data-block-id="0d8ff5bd61a099f7510430dc1bdecd8b" data-name="text-3ee5c0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255);"><h3>Hybrid search that scales </h3></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 298px; left: 39.4995px; top: 477px;" data-block-id="4fbe414e1aa789a50e494d3f8e58d744" data-name="text-f8f85c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255);"><h3>customizability without sacrificing usability</h3></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 298px; left: 658.5px; top: 495.5px;" data-block-id="682f2f8ee5071208682c6c8a8bc95456" data-name="text-e64fa3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(255, 255, 255);"><h3>community, enablement, and education</h3></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="9c16b8d6de80e0efec92ed8def12b8f9">
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="video" data-name="video-44f15c" style="width: 513.866px; height: 513.866px; left: 213.921px; top: -276.12px;" data-block-id="e7bbea1ba3a0cf0b32a4004103a09fb1"><div class="sl-block-style" style="z-index: 10; opacity: 0.8; transform: rotate(82deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941152" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/1180fec4f47497e7a4f5346bb0e9dab7.mp4"></video></div></div></div>
+
+<div class="sl-block" data-block-type="text" data-name="text-fed470" style="height: auto; width: 360px; left: 44px; top: 132.5px;" data-block-id="765141f6d7d9a764b74123f567b4dbfc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); font-size: 150%;"><h3>flexible deployment &amp; architecture</h3></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 280px; left: 667.5px; top: 195px;" data-name="text-3ee5c0" data-block-id="cb1624d9861e6a059ea5b0e57501a27e"><div class="sl-block-style" style="z-index: 12; opacity: 0.05;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255);"><h3>Hybrid search that scales </h3></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 298px; left: 39.4995px; top: 477px;" data-name="text-f8f85c" data-block-id="c794afe903722f6b6e33647b58060bd0"><div class="sl-block-style" style="z-index: 13; opacity: 0.05;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255);"><h3>customizability without sacrificing usability</h3></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 298px; left: 658.5px; top: 495.5px;" data-name="text-e64fa3" data-block-id="349c62a707fb7ce4726d7680de7b7165"><div class="sl-block-style" style="z-index: 14; opacity: 0.05;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255);"><h3>community, enablement, and education</h3></div></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-ac60f6" data-block-id="69df1e701e677aaf2be2140c38a9f0a9" style="min-width: 30px; min-height: 30px; width: 596.444px; height: 328.044px; left: 456.556px; top: 346.728px;"><div class="sl-block-content" style="z-index: 16; border-style: solid; border-radius: 15px;" data-media-id="11944725" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/5cb9828b95fa809a91a1b3dc063bdf8c.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="data-science-dojo-webinar-3-real-world-ai/5cb9828b95fa809a91a1b3dc063bdf8c.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/5f6b002c287e28b079d2e735db55c7e1.mp4"></video></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-1d61f4" data-block-id="0eaa603a69617fe59e93b1e77f9b0473" style="width: 515px; height: 228px; left: 538px; top: 94px; min-width: 1px; min-height: 1px;"><a class="sl-block-content" style="z-index: 15; border-style: solid; border-radius: 15px;" href="https://weaviate.io/case-studies/instabase" target="_blank"><img class="" data-natural-width="515" data-natural-height="228" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/3153e1d574f3bb7d9dc8dbce889a5fe6.png"></a></div>
+<div class="sl-block" data-block-type="text" data-name="text-360e37" data-block-id="f74f8961090cb3f93a16ed44c75a3b92" style="height: auto; width: 377px; left: 35.5px; top: 368.228px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; color: rgb(0, 0, 0); font-size: 131%;"><h2>Multi-tenant systems</h2></div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-8bc68f" data-block-id="47bd6b89d3c8057f3aa9e12eb3cdecfa" style="width: 422px; height: 153px; left: 13px; top: 346.728px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 17;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 422 153"><rect width="422" height="153" rx="15" ry="15" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-fc4367" data-block-id="a6492d43dae76e4a14dfd43955a17a2b" style="width: 314.449px; height: 112.25px; left: 120.551px; top: 510.75px; min-width: 1px; min-height: 1px;"><a class="sl-block-content" style="z-index: 19; border-style: solid; border-radius: 15px;" href="https://weaviate.io/developers/academy/py/multitenancy" target="_blank"><img class="" data-natural-width="423" data-natural-height="151" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/07e3258013507068e96bbadefee2896c.png"></a></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="e15f9dc2c99cbdd9153efc9e72a2e5e6">
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="video" data-name="video-44f15c" style="width: 728.404px; height: 728.404px; left: 394.298px; top: -141.202px;" data-block-id="e4ad89a217bd0a1092146e664d63f80f"><div class="sl-block-style" style="z-index: 10; opacity: 0.8; transform: rotate(180deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941152" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/1180fec4f47497e7a4f5346bb0e9dab7.mp4"></video></div></div></div>
+
+<div class="sl-block" data-block-type="text" data-name="text-fed470" style="height: auto; width: 298px; left: 39.4995px; top: 177px;" data-block-id="77b5ef95c112f2cd6a69b1aab94f8d68"><div class="sl-block-style" style="z-index: 11; opacity: 0.05;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255);"><h3>flexible deployment &amp; architecture</h3></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 366px; left: 594px; top: 141px;" data-name="text-3ee5c0" data-block-id="ac0e1f2e393b5f2e9732df359e126d34"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255); font-size: 150%;"><h3>Hybrid search that scales </h3></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 298px; left: 39.4995px; top: 477px;" data-name="text-f8f85c" data-block-id="291db895863817e1f28e36725d5b15e1"><div class="sl-block-style" style="z-index: 13; opacity: 0.05;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255);"><h3>customizability without sacrificing usability</h3></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 298px; left: 658.5px; top: 495.5px;" data-name="text-e64fa3" data-block-id="6334bcfa6510c148a876cca9ceab0740"><div class="sl-block-style" style="z-index: 14; opacity: 0.05;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255);"><h3>community, enablement, and education</h3></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4e4033" data-block-id="83a36c1c1a7c54873c2acc5fdab0e82b" style="width: 658.5px; height: 284.185px; left: -25.756px; top: 417.565px; min-width: 1px; min-height: 1px;"><a class="sl-block-content" style="z-index: 15; border-style: solid; border-radius: 15px;" href="https://stackoverflow.blog/2023/07/31/ask-like-a-human-implementing-semantic-search-on-stack-overflow/" target="_blank"><img class="" data-natural-width="716" data-natural-height="309" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/f4a29621573e0a8a228e00c65757319d.png"></a></div>
+<div class="sl-block" data-block-type="iframe" data-name="iframe-bec610" data-block-id="00305fa88a9650da96892cc1c14ac2f8" style="width: 437.053px; height: 306px; left: -82.745px; top: 98.25px;"><div class="sl-block-content" style="z-index: 16; border-style: solid; border-radius: 15px;"><iframe allow="fullscreen; autoplay; accelerometer; geolocation; gyroscope; camera; encrypted-media; microphone; midi" data-src="https://slides.victoriaslocum.com/slides/Hybrid-Search/index.html#/20" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock allow-presentation"></iframe></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-2c5d6b" data-block-id="d03e9cb7138dc4fd2ba23a9270e23ac4" style="min-width: 30px; min-height: 30px; width: 372.601px; height: 338.728px; left: 642.144px; top: 363.022px;"><div class="sl-block-content" style="z-index: 17; border-style: solid; border-radius: 15px;" data-media-id="11944791" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/03562a4eace5f1851753f6d2fe6e8bd2.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/03562a4eace5f1851753f6d2fe6e8bd2.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/1410e798e77ef2a72a23b72c7cb62fdd.mp4"></video></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-7d929a" data-block-id="b60d981dfd73c17ac26c970069a157c2" style="width: 269.436px; height: 142px; left: 363.308px; top: 262.25px; min-width: 1px; min-height: 1px;"><a class="sl-block-content" style="z-index: 18; border-style: solid; border-radius: 10px;" href="https://events.weaviate.io/hybrid-search-webinar" target="_blank"><img class="" data-natural-width="666" data-natural-height="351" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/2f85de3232ddc139d7744ff48ba73bae.png"></a></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="561d55690b48aecac8ca7bc8ec17c0f2">
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="video" data-name="video-44f15c" style="width: 1274.16px; height: 1274.16px; left: -402.58px; top: -128.08px;" data-block-id="4429e9187bb0228b9a0b05dc43b1e1c9"><div class="sl-block-style" style="z-index: 10; opacity: 0.8; transform: rotate(-53deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941152" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/1180fec4f47497e7a4f5346bb0e9dab7.mp4"></video></div></div></div>
+
+<div class="sl-block" data-block-type="text" data-name="text-fed470" style="height: auto; width: 298px; left: 39.4995px; top: 177px;" data-block-id="54ebf737813ac8d8dba002c46cf487bd"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255);"><h3>flexible deployment &amp; architecture</h3></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 280px; left: 667.5px; top: 195px;" data-name="text-3ee5c0" data-block-id="a83f0771b435cbbd7ca5c6fc4046b4c7"><div class="sl-block-style" style="z-index: 12; opacity: 0.05;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255);"><h3>Hybrid search that scales </h3></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 448px; left: 10.4995px; top: 441px;" data-name="text-f8f85c" data-block-id="66a52a874893add969a8c226c14eebee"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255); font-size: 150%;"><h3>customizability without sacrificing usability</h3></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 298px; left: 658.5px; top: 495.5px;" data-name="text-e64fa3" data-block-id="dae0e7ebe552ffca3d6f0d7fe24617cf"><div class="sl-block-style" style="z-index: 14; opacity: 0;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255);"><h3>community, enablement, and education</h3></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-cecd69" data-block-id="73221605777b2e1c4f9c9f5c6b0d98d1" style="width: 455.305px; height: 395px; left: 297.347px; top: 0px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 15; border-style: solid; border-radius: 15px;"><img class="" data-natural-width="755" data-natural-height="655" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/bfa001a520c24f601af395710800919f.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-958ae0" data-block-id="a5fe6f3f27780f53b144997205f1a60f" style="width: 183px; height: 509px; left: 773.5px; top: 0px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 16; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="183" data-natural-height="509" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/f16b9b4b5c3edbd950f506f6a916fd3c.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-e1ea81" data-block-id="1bdd62f4d0e71b725d2d34b6aa54f85c" style="height: auto; width: 264.847px; left: -4.25px; top: 49.75px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; color: rgb(161, 65, 175); font-size: 81%;">
+<h2>the balance between</h2>
+
+<h2>out-of-the-box defaults</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 340.618px; left: 597.691px; top: 553px;" data-block-id="56e3935cdfb3248f72c15bb6c182b836" data-name="text-35d359"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(59, 49, 195); font-size: 82%;"><h2>while still being able to build custom solutions</h2></div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-9488e1" data-block-id="343e1536ce0bed59a778da93eea2a2c2" style="width: 295.347px; height: 191.5px; left: -19px; top: 30px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 17;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 295 192"><rect width="295.347" height="191.5" rx="15" ry="15" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 377px; height: 148.5px; left: 579.5px; top: 530.25px;" data-block-id="d7ffab2f995d3b5ad4181d9347609de2" data-name="shape-782ce5"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 19;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 377 149"><rect width="377" height="148.5" rx="15" ry="15" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="f2324c56a56b6b7b64b33b91ce1652e9">
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="video" data-name="video-44f15c" style="width: 563.978px; height: 563.978px; left: 721.567px; top: 294.511px;" data-block-id="cfd70ac232c100deed3a7fc8ea454a9d"><div class="sl-block-style" style="z-index: 10; opacity: 0.8; transform: rotate(54deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941152" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/1180fec4f47497e7a4f5346bb0e9dab7.mp4"></video></div></div></div>
+
+<div class="sl-block" data-block-type="text" data-name="text-fed470" style="height: auto; width: 298px; left: 39.4995px; top: 177px;" data-block-id="c51bd0b64f75be8bddaf70bb77960742"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255);"><h3>flexible deployment &amp; architecture</h3></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 298px; left: 39.4995px; top: 477px;" data-name="text-f8f85c" data-block-id="a2dc2f1471528bc6e57343cd43f29889"><div class="sl-block-style" style="z-index: 13; opacity: 0;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255);"><h3>customizability without sacrificing usability</h3></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 418px; left: 581.5px; top: 494.5px;" data-name="text-e64fa3" data-block-id="543248f34595f5b3e21de47c1340e981"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255); font-size: 150%;"><h3>community, enablement, and education</h3></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-0db386" data-block-id="7d42e092ee02c74664a3131a5b2dd769" style="width: 629.471px; height: 268px; left: -48.353px; top: 0px; min-width: 1px; min-height: 1px;"><a class="sl-block-content" style="z-index: 16; border-style: solid; border-radius: 15px;" href="https://github.com/weaviate/weaviate" target="_blank"><img class="" data-natural-width="862" data-natural-height="367" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/ed36373f1af3588cb0113e249cebc628.png"></a></div>
+<div class="sl-block" data-block-type="video" data-name="video-4f6e8a" data-block-id="aeae372e3f0976581335331a865fe122" style="min-width: 30px; min-height: 30px; width: 595.556px; height: 335px; left: -50.556px; top: 350px;"><div class="sl-block-content" style="z-index: 17; border-style: solid; border-radius: 15px;" data-media-id="11944874" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/0149be590ac6249b46e25bda0dc9474e.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" poster="data-science-dojo-webinar-3-real-world-ai/0149be590ac6249b46e25bda0dc9474e.jpg" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/ee22026a20885cf2bf37ed3e490bc5bc.mp4"></video></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-cb3320" data-block-id="8da38369bbbe88139340a7e508da5eb1" style="height: auto; width: 385px; left: -94.382px; top: 288px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; color: rgb(255, 255, 255);"><h2>open source 💙</h2></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-18864c" data-block-id="f070dab5090ec8aacbde7a92114aa9bd" style="width: 401.167px; height: 117.393px; left: 602.389px; top: 223.911px; min-width: 1px; min-height: 1px;"><a class="sl-block-content" style="z-index: 19; border-style: solid; border-radius: 15px;" href="https://weaviate.io/podcast" target="_blank"><img class="" data-natural-width="909" data-natural-height="266" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/fd9816d438f22fdadfa9fcb80963e889.png"></a></div>
+<div class="sl-block" data-block-type="image" data-name="image-ec85a6" data-block-id="efc7aee76c17e901b61403bebcff7902" style="width: 455.993px; height: 206px; left: 602.389px; top: 0px; min-width: 1px; min-height: 1px;"><a class="sl-block-content" style="z-index: 20; border-style: solid; border-radius: 15px;" href="https://arxiv.org/pdf/2502.00032" target="_blank"><img class="" data-natural-width="653" data-natural-height="295" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/50238a9fe6f1d3830ec68f22c9266c13.png"></a></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="06ae6a39b0293041a4d55585ec1951c0">
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="video" data-name="video-44f15c" style="width: 644.765px; height: 644.765px; left: 539.617px; top: -236.382px;" data-block-id="eeacee180545fe73f0aa24506c5ba7d3"><div class="sl-block-style" style="z-index: 10; opacity: 0.8; transform: rotate(-148deg);"><div class="sl-block-content" style="z-index: 10;" data-media-id="11941152" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="data-science-dojo-webinar-3-real-world-ai/408ddf267c0592facc13a0a8b4d805a6.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/1180fec4f47497e7a4f5346bb0e9dab7.mp4"></video></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-2d24d2" style="height: auto; width: 912px; left: 24px; top: 6.5005px;" data-block-id="a34631d35621b1407557fa3eaa062d4c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); text-align: center;">
+<h1>Retreival Augmented Generation</h1>
+
+<h3>(RAG)</h3>
+</div></div>
+<div class="sl-block" data-block-type="video" data-name="video-be571e" data-block-id="b016f151970ffcee3c31f808eb2a0b27" style="min-width: 30px; min-height: 30px; width: 820.44px; height: 477px; left: 69.78px; top: 194px;"><div class="sl-block-content" style="z-index: 13; border-style: solid; border-radius: 15px;" data-media-id="11944918" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/4717bc2343db47a34bf76b4780c4fc4a.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="data-science-dojo-webinar-3-real-world-ai/4717bc2343db47a34bf76b4780c4fc4a.jpg" data-paused-by-reveal="" data-src="data-science-dojo-webinar-3-real-world-ai/eb3a6640a6565b194ed68c9140a788dd.mp4"></video></div></div></section><section data-background-color="rgb(221, 234, 242)" data-auto-animate="" data-id="381444f23c6c0b456d06e8c02c067df5">
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="image-9e5a77" data-block-id="82f4af13a4b7f00d7fddd69ebc2204e6" style="width: 1096.23px; height: 622.625px; left: -68.115px; top: 38.6875px; min-width: 1px; min-height: 1px;"><a class="sl-block-content" style="z-index: 10;" href="https://weaviate.io/ebooks/advanced-rag-techniques" target="_blank"><img class="" data-natural-width="1280" data-natural-height="727" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/cbeaeeb8035fd8d1f1d0ff8ce111bc47.png"></a></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="beeab537de2f8fc0e1a2ae64f97cbebb" data-background-iframe="https://verba.weaviate.io/">
+
+
+
+
+
+
+
+
+
+</section><section data-background-color="rgb(1, 1, 1)" data-background-iframe="https://weaviate.io/developers/weaviate" data-auto-animate="" data-id="9d394aa5143c711d4d45da5ee384649b">
+
+
+
+
+
+
+
+
+
+</section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="1009511eb61e36ac061dbe288cd39a42">
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="image-1abb8b" data-block-id="10785b0145b18f5a9bbcc938f0aaa3e2" style="width: 960px; height: 146.297px; left: -1.42109e-14px; top: 276.851px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11; border-style: solid; border-radius: 15px;"><img class="" data-natural-width="1588" data-natural-height="242" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/5bdd91e2baff55c2eedf9e33d6076ba1.png"></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="fada5bba18fb9118400c821ce74a9b3a">
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="image-4fa37c" style="width: 960px; height: 217.358px; left: -1.42109e-14px; top: 84.321px; min-width: 1px; min-height: 1px;" data-block-id="856bf60ac5f8e70cf83e2d6fc2bb8c72"><div class="sl-block-content" style="z-index: 10; border-style: solid; border-radius: 15px;"><img class="" data-natural-width="1590" data-natural-height="360" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/26f5e1f08b0f49161c9102f983d21f26.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-e33bfa" style="width: 960px; height: 239.697px; left: -1.42109e-14px; top: 375.151px; min-width: 1px; min-height: 1px;" data-block-id="029c45069a58bb40d275a4df1a755521"><div class="sl-block-content" style="z-index: 11; border-style: solid; border-radius: 15px;"><img class="" data-natural-width="1586" data-natural-height="396" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/f4273b2bb940c090e2f5bb138e9af2e3.png"></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="6fe5a4c2534c45cc00fb1dfb8925e358">
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="shape" style="width: 200.827px; height: 187px; left: 759.173px; top: 219px;" data-block-id="50afe05ddc485221a2e19eeb69a8e758" data-name="shape-40b1a5"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 11;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 201 187"><rect width="200.827" height="187" rx="15" ry="15" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-aab944" data-block-id="f492358187f79d6b8be98458728dd975" style="height: auto; width: 600px; left: 180px; top: 26px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255);"><h1>The next generation</h1></div></div>
+
+<div class="sl-block" data-block-type="video" data-name="video-cadd78" style="min-width: 30px; min-height: 30px; width: 773.714px; height: 773.714px; left: 505.353px; top: -189.26px;" data-block-id="a4d6886b727447899a306830b5ce0c1a"><div class="sl-block-style" style="z-index: 10; transform: rotate(-97deg); opacity: 0.72;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927471" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg" data-paused-by-reveal="" data-autoplay="" muted="" loop="loop" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/6a81da303259374dd40ba315c14c65f7.mp4"></video></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 90px;" data-block-id="de442a35d5f8ba2350a7934628a1e928" data-name="text-79e41e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255);"><h1>of RAG</h1></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-f5a123" data-block-id="a5e635ff5900b710c3aab949f83f3971" style="min-width: 30px; min-height: 30px; width: 660.422px; height: 452px; left: 15px; top: 219px;"><div class="sl-block-content" style="z-index: 14; border-style: solid; border-radius: 15px;" data-media-id="11943857" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/610a3c12395c9ec4b2766fbd489d9ce1.jpg"><video playsinline="" data-autoplay="" muted="" loop="loop" poster="data-science-dojo-webinar-3-real-world-ai/610a3c12395c9ec4b2766fbd489d9ce1.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/34689488d0b0c938c626587bee6c324e.mp4"></video></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 200.827px; height: 187px; left: 759.173px; top: 495px;" data-block-id="df79364bf4eb8690fe222eee522049c8" data-name="shape-1c75b3"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 15;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 201 187"><rect width="200.827" height="187" rx="15" ry="15" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 221px; left: 749.087px; top: 144.597px;" data-block-id="bc313c1404c88c538b08cfcc2fcafad9" data-name="text-bd008f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(255, 255, 255); font-size: 73%; text-align: center;"><p>Follow to stay updated on the release!</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-8ff602" data-block-id="0421afc02ad31172b353563a2e009e62" style="height: auto; width: 600px; left: 559.587px; top: 409px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(255, 255, 255);"><h3>EDWARD</h3></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 559.587px; top: 459px;" data-block-id="c89ed1617c483732888739bbb0b13009" data-name="text-37e8b5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; color: rgb(255, 255, 255);"><h3>danny</h3></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-bd0f1a" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 933px; top: 382px;" data-block-id="a3c92ee36f2f27ed83473d771d34df21"><div class="sl-block-content" data-line-x1="0" data-line-y1="55" data-line-x2="37.08699999999999" data-line-y2="0" data-line-color="#ffffff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 19;" data-line-c="30"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="37.08699999999999" height="55" viewbox="0 0 37.08699999999999 55"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ffffff" stroke-width="2" stroke-linecap="round" d="M0 55 A33.335 33.335 0 0 0 38.586 1.324"></path><path stroke="#ffffff" stroke-width="2" d="M 37.638 9.016 L 37.62 0.531 L 46.105 0.512 L 37.62 0.531" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 55 A33.335 33.335 0 0 0 37.087 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 55 A33.335 33.335 0 0 0 37.087 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 749.087px; top: 465px;" data-block-id="1160a141fd9e2c67cb18e95fe16bb929" data-name="line-a8da0d"><div class="sl-block-content" data-line-x1="48.499" data-line-y1="0" data-line-x2="0" data-line-y2="35.59699999999998" data-line-color="#ffffff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 20;" data-line-c="26"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="48.499" height="35.59699999999998" viewbox="0 0 48.499 35.59699999999998"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ffffff" stroke-width="2" stroke-linecap="round" d="M48.499 0 A30.4 30.4 0 0 0 -0.879 33.801"></path><path stroke="#ffffff" stroke-width="2" d="M 2.986 27.072 L -0.286 34.901 L -8.115 31.63 L -0.286 34.901" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M48.499 0 A30.4 30.4 0 0 0 0 35.597"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M48.499 0 A30.4 30.4 0 0 0 0 35.597"></path></svg></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4415f8" data-block-id="adcfb9d25f60de98e6652ad7aad79db3" style="width: 176px; height: 176px; left: 771.587px; top: 500.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 21;"><img class="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/ffb4bd0b3e01b22523b6978513d2b512.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-a587dc" data-block-id="71887ab6ddee15b445d2e033eec62c51" style="width: 181px; height: 181px; left: 769.087px; top: 222px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 22;"><img class="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/c066ad2664cb350f5f911ab9a45d242e.png"></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="a5a57289ea0b171426dee04f3369b97d">
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-2d24d2" style="height: auto; width: 912px; left: 24px; top: 22.5005px;" data-block-id="f1c129da33229758c91d37be5ba37df6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255); text-align: center;"><h1><strong style="font-family:overpass 2,sans-serif; font-size:1em; font-weight:bold">E-commerce with AI</strong></h1></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-ec7d6d" data-block-id="0dcee985c8fc9945afea38778753a98f" style="width: 639.859px; height: 301.8px; left: 355.141px; top: 140.6px; min-width: 1px; min-height: 1px;"><a class="sl-block-content" style="z-index: 13; border-style: solid; border-radius: 15px;" href="https://weaviate.io/blog/moonsift-story" target="_blank"><img class="" data-natural-width="1200" data-natural-height="566" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/bec9368179553925615a657ccb96e483.png"></a></div>
+<div class="sl-block" data-block-type="text" data-name="text-a2c20c" data-block-id="f31747498fad5404daaaffd040a576f7" style="height: auto; width: 600px; left: 375.07px; top: 451px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255);"><p>From the beginning, Wood and Reed’s vision was to use the power of AI to help shoppers more easily <strong>discover the products they love.</strong></p></div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-7232cc" data-block-id="2e7502299eff0ff354a943323e470d09" style="width: 381px; height: 320px; left: -35px; top: 346.5px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 15;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 381 320"><rect width="381" height="320" rx="15" ry="15" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-651452" data-block-id="22aa324704752859d881370cedd9aa12" style="height: auto; width: 347px; left: -18px; top: 188.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(255, 255, 255);"><p>E-commerce is the intersection of a lot of different <strong>vector search strengths - and difficulties</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-aa0790" data-block-id="8d62d832bc6047b38259edee6add0435" style="height: auto; width: 347px; left: -28px; top: 360px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; text-align: left;"><ul>
+	<li><span style="font-size:0.9em">Multi-modal embeddings </span></li>
+	<li><span style="font-size:0.9em">Large-scale, single-tenant search</span></li>
+	<li><span style="font-size:0.9em">Recommendation and personalization systems</span></li>
+	<li><span style="font-size:0.9em">Prioritize speed over exact accuracy</span></li>
+	<li><span style="font-size:0.9em">Query transformation</span></li>
+</ul></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-cadd78" style="min-width: 30px; min-height: 30px; width: 773.714px; height: 773.714px; left: 450.024px; top: -233.955px;" data-block-id="bf9aa541dbbbffecfed8c021e07c89b4"><div class="sl-block-style" style="z-index: 10; transform: rotate(135deg); opacity: 0.72;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927471" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg" data-paused-by-reveal="" data-autoplay="" muted="" loop="loop" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/6a81da303259374dd40ba315c14c65f7.mp4"></video></div></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="bc0b14073d3167700ba369b8d2f3eebc">
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-2d24d2" style="height: auto; width: 912px; left: 24px; top: 22.5005px;" data-block-id="44af527efa4738c4347c5e03b03f3d9b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); text-align: center;">
+<h1><strong>Agents </strong></h1>
+
+<h3><strong>The Next Horizon</strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="video" data-name="video-cadd78" style="width: 591.988px; height: 591.988px; left: 184.006px; top: -186.342px;" data-block-id="2344cccdbaf20bb7153c2c24f93b2266"><div class="sl-block-style" style="z-index: 10; transform: rotate(25deg); opacity: 0.72;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927471" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg" data-paused-by-reveal="" data-autoplay="" muted="" loop="loop" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/6a81da303259374dd40ba315c14c65f7.mp4"></video></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-508304" data-block-id="d9fd36b5d991c8364d2d416d389fd190" style="width: 960.001px; height: 429.534px; left: 0px; top: 169.233px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12; border-style: solid; border-radius: 15px;"><img class="" data-natural-width="1265" data-natural-height="566" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/4e30b93cbbcaeb44e7c03a8b91ad709f.png"></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="bca6ddd185affac0ec5a2c24996b1c89">
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-2d24d2" style="height: auto; width: 912px; left: 24px; top: 22.5005px;" data-block-id="589998470ae47e066f24047b96cb77d7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); text-align: center; font-size: 115%;">
+<h1><strong>Agents </strong></h1>
+
+<h3><strong>The Next Horizon</strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="video" data-name="video-cadd78" style="width: 851.466px; height: 851.466px; left: -250.233px; top: 140.267px;" data-block-id="e79009a942a43ba3c0a06f93c39bb017"><div class="sl-block-style" style="z-index: 10; transform: rotate(-100deg); opacity: 0.72;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927471" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg" data-paused-by-reveal="" data-autoplay="" muted="" loop="loop" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/6a81da303259374dd40ba315c14c65f7.mp4"></video></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-92e1c0" data-block-id="41d3fa1407a71deeee34e329253599ee" style="height: auto; width: 600px; left: 484.5px; top: 196px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255);"><h3>What is an agent?</h3></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-4c4d50" data-block-id="b54ce8229796425ed94c25c63c4c3bbc" style="height: auto; width: 480px; left: 542px; top: 241px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(0, 0, 0); font-size: 90%;"><ol>
+	<li>
+<strong>LLM:</strong> Acts as the <em>brain of the operation.</em>
+</li>
+	<li>
+<strong>Tools:</strong> External resources the agent can access.</li>
+	<li>
+<strong>Memory: </strong>Both short-term and long-term.</li>
+	<li>
+<strong>Reasoning:</strong> Break down problems and plan solutions</li>
+</ol></div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-2f200c" data-block-id="7b45789e044f57b005fbfbc1cd99e0ae" style="width: 505px; height: 257px; left: 532px; top: 232px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 13;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 505 257"><rect width="505" height="257" rx="15" ry="15" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: -124.5px; top: 414px;" data-block-id="d65c979cc0d3a6504c3cf10845cd268f" data-name="text-31103e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(255, 255, 255);"><h3>An unsolicited opinion:</h3></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 442px; left: -45.5px; top: 457px;" data-block-id="6eb89146b98f7c7f95f1e4aecdc942db" data-name="text-d60f22"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(255, 255, 255);"><p><span style="font-size:0.9em"><strong>Purpose-built agents </strong>with some degree of <strong>human-in-the-loop</strong> will be the next big thing we see in industry, from there, we can move onto more <strong>autonomous systems</strong> (but this will take awhile)</span></p></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="c2669b14fb4202d783a023a6b847a516">
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-2d24d2" style="height: auto; width: 912px; left: 24px; top: 22.5005px;" data-block-id="ef22f7d973af115f2ad03f1f99fe05b3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); text-align: center; font-size: 90%;">
+<h1><strong>Agentic query augmentation</strong></h1>
+
+<h3><strong>for example...</strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="video" data-name="video-cadd78" style="width: 547.534px; height: 547.534px; left: -113.407px; top: -207.164px;" data-block-id="edbf9897e96f50e63d88158fa0db6940"><div class="sl-block-style" style="z-index: 10; transform: rotate(53deg); opacity: 0.72;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927471" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg" data-paused-by-reveal="" data-autoplay="" muted="" loop="loop" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/6a81da303259374dd40ba315c14c65f7.mp4"></video></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-a95aca" data-block-id="ff6f6b803f9f73dd9024d2b90c9f09e7" style="width: 480px; height: 544.594px; left: 480px; top: 141.703px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="862" data-natural-height="978" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/360435a93bdb9574a52f5b7bb212392a.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-3e013c" data-block-id="b78582eafc8920759d755704313ac098" style="height: auto; width: 417px; left: 13px; top: 382px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left; color: rgb(255, 255, 255);"><ol>
+	<li>User input passed to LLM</li>
+	<li>LLM decides which collection to query, or tool to use</li>
+	<li>LLM designs a query with filters, aggregation, etc.</li>
+	<li>Search + Generation is performed</li>
+</ol></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="139379c19e283b926e9f4d70de694b67">
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-2d24d2" style="height: auto; width: 912px; left: 24px; top: 22.5005px;" data-block-id="41fc988493addafd7297b4f8a6127033"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); text-align: center; font-size: 90%;">
+<h1><strong>Agentic query augmentation</strong></h1>
+
+<h3><strong>for example...</strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="video" data-name="video-cadd78" style="width: 693.71px; height: 693.71px; left: 436.833px; top: 289.145px;" data-block-id="32a3d87dd317710bb8560f1c7d7d7a1c"><div class="sl-block-style" style="z-index: 10; transform: rotate(-176deg); opacity: 0.72;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927471" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg" data-paused-by-reveal="" data-autoplay="" muted="" loop="loop" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/6a81da303259374dd40ba315c14c65f7.mp4"></video></div></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-b5b213" style="width: 992.131px; height: 508.467px; left: -25px; top: 169.267px;" data-block-id="eae769d1f05060436a112154ec46247b"><div class="sl-block-content" style="z-index: 13;" data-media-id="11943979" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/99f1ad2f6a49b7e886ae4e512a6d910e.jpg"><video playsinline="" data-paused-by-reveal="" poster="data-science-dojo-webinar-3-real-world-ai/99f1ad2f6a49b7e886ae4e512a6d910e.jpg" data-autoplay="" muted="" loop="loop" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/cc77e044b102ac1bbd9b772b5cf5134a.mp4"></video></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-3774db" style="height: auto; width: 450px; left: 531.5px; top: 636px;" data-block-id="6cbfbe13801d8620e390dd5176d1ba11"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255);"><h1>like in Elysia</h1></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-ec5470" style="width: auto; height: auto; left: 907.5px; top: 536px;" data-block-id="78ed951978ff7dbe4ac71f7a3cb03600"><div class="sl-block-content" data-line-x1="40" data-line-y1="132" data-line-x2="0" data-line-y2="0" data-line-color="#ffffff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 15;" data-line-c="63"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="40" height="132" viewbox="0 0 40 132"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ffffff" stroke-width="2" stroke-linecap="round" d="M40 132 A69.246 69.246 0 0 0 1.964 -0.377"></path><path stroke="#ffffff" stroke-width="2" d="M 7.625 4.843 L 0.742 -0.12 L 5.705 -7.003 L 0.742 -0.12" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M40 132 A69.246 69.246 0 0 0 0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M40 132 A69.246 69.246 0 0 0 0 0"></path></svg></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="348828898314b407c8b9ed33b3b8ac97">
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-2d24d2" style="height: auto; width: 912px; left: 24px; top: 22.5005px;" data-block-id="e7bd361fa6e10f75cecc4fc12c794172"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); text-align: center; font-size: 90%;">
+<h1><strong>Agentic query augmentation</strong></h1>
+
+<h3><strong>for example...</strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="video" data-name="video-cadd78" style="width: 693.71px; height: 693.71px; left: -346.855px; top: 304.145px;" data-block-id="5bd6618625f701fe164341af909cb5c0"><div class="sl-block-style" style="z-index: 10; transform: rotate(15deg); opacity: 0.72;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927471" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg" data-paused-by-reveal="" data-autoplay="" muted="" loop="loop" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/6a81da303259374dd40ba315c14c65f7.mp4"></video></div></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-b5b213" style="width: 992.131px; height: 507.434px; left: -25px; top: 169.783px;" data-block-id="73dbec89c33e9c4b23a8dd67ee82fd91"><div class="sl-block-content" style="z-index: 12;" data-media-id="11944029" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/11b23c0aca0f630f6f3c6d4b40614931.jpg"><video playsinline="" data-paused-by-reveal="" poster="data-science-dojo-webinar-3-real-world-ai/11b23c0aca0f630f6f3c6d4b40614931.jpg" data-autoplay="" muted="" loop="loop" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/1cf1f120a6c96050367804164e519592.mp4"></video></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-3774db" style="height: auto; width: 745px; left: 107.5px; top: 636px;" data-block-id="57eabf78cb2dd1aaa642185311a1abdc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255);"><h1>purpose build agents</h1></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-ec5470" style="width: auto; height: auto; left: 152.5px; top: 531px;" data-block-id="265136d13355eddb0855d348cad8b706"><div class="sl-block-content" data-line-x1="0" data-line-y1="137" data-line-x2="10" data-line-y2="0" data-line-color="#ffffff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;" data-line-c="-55"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="10" height="137" viewbox="0 0 10 137"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ffffff" stroke-width="2" stroke-linecap="round" d="M0 137 A70.384 70.384 0 0 1 8.026 0.322"></path><path stroke="#ffffff" stroke-width="2" d="M 2.236 -4.616 L 9.262 0.142 L 4.503 7.168 L 9.262 0.142" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 137 A70.384 70.384 0 0 1 10 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 137 A70.384 70.384 0 0 1 10 0"></path></svg></div></div></section><section data-background-color="rgb(1, 1, 1)" data-auto-animate="" data-id="054f1e60eea588d06cef4a9b1e87fb55">
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="shape" style="width: 305px; height: 284px; left: 492.5px; top: 336px;" data-name="shape-40b1a5" data-block-id="65d2b5d5e460a414780da13f1d6fc3ca"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 12;" data-shape-corner-radius="15px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 305 284"><rect width="305" height="284" rx="15" ry="15" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="image" style="width: 267px; height: 267px; left: 511.5px; top: 344.5px; min-width: 1px; min-height: 1px;" data-name="image-c7113f" data-block-id="148b947a4bff865fab1fb13e54048000"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/1e65307be1976ce4f6b093f81e9cb7f4.png"></div></div>
+
+<div class="sl-block" data-block-type="image" data-name="image-8a87b8" style="width: 606.836px; height: 336px; left: 174.082px; top: 176.5px; min-width: 1px; min-height: 1px;" data-block-id="0bb92bc9a7ed9de6f6993807bb445f57"><div class="sl-block-content" style="z-index: 11; border-style: solid; border-radius: 15px;"><img class="" data-natural-width="1616" data-natural-height="834" data-crop-x="0" data-crop-y="0" data-crop-width="0.841886" data-crop-height="0.903226" style="left: 0px; top: 0px; width: 721px; height: 372px;" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/55c93b95e2c68cae95c3c84a5359d2c3.png"></div></div>
+
+<div class="sl-block" data-block-type="text" data-name="text-aab944" style="height: auto; width: 600px; left: 174.082px; top: 127px;" data-block-id="89610edeee2609972fb80c2377ddfb77"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255);"><h2>connect with me on LinkedIn!</h2></div></div>
+
+<div class="sl-block" data-block-type="video" data-name="video-cadd78" style="width: 782.825px; height: 782.825px; left: -6.552px; top: -77.4125px;" data-block-id="fe3d93370bc30b4d485b6583de83796d"><div class="sl-block-style" style="z-index: 10; transform: rotate(165deg); opacity: 0.72;"><div class="sl-block-content" style="z-index: 10;" data-media-id="11927471" data-video-thumb="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg"><video playsinline="" poster="data-science-dojo-webinar-3-real-world-ai/846d93e80b86108fdb071601f60e45c1.jpg" data-paused-by-reveal="" data-autoplay="" muted="" loop="loop" data-lazy-loaded="" data-src="data-science-dojo-webinar-3-real-world-ai/6a81da303259374dd40ba315c14c65f7.mp4"></video></div></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":3353566,"slug":"data-science-dojo-webinar-3-real-world-ai","title":"Data Science Dojo Webinar 3: AI in the Real World","description":"","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2025-02-17T09:20:04.581Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/15e088facde2c535e5a7a53d8d5c54cd/thumb.jpg?1739785097","view_count":1,"user":{"id":2603834,"username":"victoriaslocum","name":"Victoria Slocum","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocLuv0CJobWTLW0FYgpwuICNUOqovE2aTUnNk7cQKQ7VFiE=s96-c","account_type":"pro","team_id":null,"settings":{"id":57202564,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"fade","transition":"slide","theme_id":null,"theme_font":"overpass2","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":37,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1739886527654,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"language":"en","notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "fade",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>
